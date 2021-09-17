@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* https://coolors.co/7d2e68-82aeb1-08415c-34623f-9e8fb2 */
+
+body {
+  background-color: #82AEB1;
+  margin: 0 auto;
+  max-width: auto;
+}
+
+header,
+footer {
+  background-color: #08415C;
+  color: whitesmoke;
+  padding: 20px;
+}
+
+img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: left;
+}
+
+.item {
+  border-radius: 10px;
+}
+
+.item.grid-container {
+  display: grid;
+  height: 100vh;
+
+  gap: 10px;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+
+}
+
+.item.header {
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 12;
+}
+
+.item.figure {
+  grid-row: 1 / span 12;
+  grid-column: 10 / auto;
+}
+
+.item.main {
+  grid-row: 4 / span 7;
+  grid-column: 2 / span 11;
+}
+
+.item.footer {
+  grid-row: 12 / span 1;
+  grid-column: 1 / span 12;
+}
+
+@media screen and (max-width: 550px) {
+  .item.grid-container {
+    display: block;
+  }
+
+  .item.header {
+    display: block;
+  }
+
+  .item.main {
+    text-align: left;
+  }
+
+  .item.footer {
+    line-height: normal;
+  }
+
+  .item.figure {
+    width: 45px;
+  }
+}
