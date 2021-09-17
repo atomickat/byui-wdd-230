@@ -15,7 +15,8 @@
         updated regularly with fall semester assignment links. ">
   <link rel="stylesheet"
         href="css/style.css">
-  <script src="js/script.js"></script> <!-- Is this js link correct? -->
+  <script defer
+          src="js/script.js"></script> <!-- Is this js link correct? -->
   <link rel="preconnect"
         href="https://fonts.googleapis.com">
   <link rel="preconnect"
@@ -41,14 +42,15 @@
     <main class="item main">
       <h2>WDD 230: Assignment Portal</h2>
       <ul>
-        <li>Lesson 02:<a href="#">Assignment Link</a></li>
-        <li>Lesson 03:<a href="#">Assignment Link</a></li>
-        <li>Lesson 04:<a href="#">Link</a>|<a href="#">Link</a></li>
+        <li>Lesson 02: <a href="#">Assignment Link</a></li>
+        <li>Lesson 03: <a href="#">Assignment Link</a></li>
+        <li>Lesson 04: <a href="#">Link </a> | <a href="#"> Link</a></li>
       </ul>
     </main>
 
     <footer class="item footer">
-      &copy; | Barbara Chamberlin | Oklahoma | BYU-I Learning
+      &copy; <span id="copyrightyear"></span> | Barbara Chamberlin | Oklahoma | BYU-I Learning
+      <p>Last Updated: <span id="lastupdated"></span></p>
     </footer>
   </div>
 </body>

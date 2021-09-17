@@ -8,7 +8,7 @@ font-family: 'Roboto', sans-serif; */
 body {
   background-color: #82AEB1;
   margin: 0 auto;
-  max-width: auto;
+  max-width: max-content;
 }
 
 header,
@@ -16,13 +16,13 @@ footer {
   background-color: #08415C;
   color: whitesmoke;
   padding: 20px;
+  text-align: center;
 }
 
 img {
   width: 250px;
   height: auto;
   border-radius: 10px;
-
 }
 
 html {
@@ -65,12 +65,37 @@ h1 {
 .item.main {
   grid-row: 4 / span 7;
   grid-column: 2 / span 11;
+
+  padding-left: 10px;
 }
 
 .item.footer {
   grid-row: 12 / span 1;
   grid-column: 1 / span 12;
 }
+
+@media (max-width: 760px) {
+  .item.grid-container {
+    display: block;
+  }
+
+  .item.header {
+    display: block;
+  }
+
+  .item.main {
+    text-align: left;
+  }
+
+  .item.footer {
+    line-height: normal;
+  }
+
+  .item.figure {
+    width: 45px;
+  }
+}
+
 
 @media screen and (max-width: 550px) {
   .item.grid-container {
