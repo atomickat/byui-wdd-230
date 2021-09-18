@@ -5,6 +5,10 @@ font-family: 'Roboto', sans-serif; */
 
 /* https://coolors.co/7d2e68-82aeb1-08415c-34623f-9e8fb2 */
 
+#lastupdated {
+  color: yellow;
+}
+
 body {
   background-color: #82AEB1;
   margin: 0 auto;
@@ -23,6 +27,11 @@ img {
   width: 250px;
   height: auto;
   border-radius: 10px;
+
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #999;
+  margin: auto;
 }
 
 html {
@@ -35,6 +44,8 @@ h1 h2 h3 h4 h5 h6 {
 
 h1 {
   text-align: left;
+  font-size: 3.5rem;
+  padding: 10px;
 }
 
 .item {
@@ -59,12 +70,12 @@ h1 {
 
 .item.figure {
   grid-row: 1 / span 12;
-  grid-column: 10 / auto;
+  grid-column: 11 / auto;
 }
 
 .item.main {
   grid-row: 4 / span 7;
-  grid-column: 2 / span 11;
+  grid-column: 2 / span 7;
 
   padding-left: 10px;
 }
