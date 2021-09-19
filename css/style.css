@@ -63,6 +63,10 @@ h1 {
 
 }
 
+.link {
+  color: whitesmoke;
+}
+
 .item.header {
   grid-row: 1 / span 3;
   grid-column: 1 / span 12;
