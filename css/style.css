@@ -73,6 +73,10 @@ h1 {
   color: #312509;
 }
 
+.byu-link {
+  color: whitesmoke;
+}
+
 .item.header {
   grid-row: 1 / span 3;
   grid-column: 1 / span 12;

@@ -28,6 +28,10 @@ footer {
   border-radius: 10px;
 }
 
+.byu-link {
+  color: whitesmoke;
+}
+
 html {
   font-family: 'Poppins', sans-serif;
 }
