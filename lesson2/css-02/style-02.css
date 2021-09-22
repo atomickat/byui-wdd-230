@@ -10,7 +10,7 @@
   background-color: #8EA8C3;
   margin: 0 auto;
   height: 100vh;
-  width: 85vw;
+  width: 90vw;
   font-size: 1.1em;
 
 }
@@ -45,21 +45,23 @@ h1 {
 figure {
   text-align: center;
 
+
 }
 
+
 .grid-container {
-  max-width: 85vw;
+
+  max-width: 100%;
   margin: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   gap: 10px 10px;
 }
 
 .grid-item {
+
   padding: 10px;
   background-color: whitesmoke;
-
   border-radius: 10px;
 }
 
@@ -75,9 +77,10 @@ figure {
   border-top-right-radius: 10px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1415px) {
   .grid-container {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
   }
 
@@ -94,16 +97,17 @@ figure {
   }
 
   .figure img {
-    width: 10.5rem;
+    width: 20rem;
   }
 
 
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 940px) {
   .grid-container {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .header {
@@ -119,7 +123,7 @@ figure {
   }
 
   .figure img {
-    width: 10.5rem;
+    width: 20rem;
   }
 
 
