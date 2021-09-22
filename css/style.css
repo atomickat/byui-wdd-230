@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
 
+
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 /* https://coolors.co/7d2e68-82aeb1-08415c-34623f-9e8fb2 */
+
 
 #lastupdated {
   color: yellow;
@@ -13,6 +15,7 @@ body {
   background-color: #82AEB1;
   margin: 0 auto;
   max-width: max-content;
+
 }
 
 header,
@@ -55,6 +58,7 @@ h1 {
 .item.grid-container {
   display: grid;
   height: 100vh;
+  width: 85vw;
 
   gap: 10px;
 
@@ -64,7 +68,7 @@ h1 {
 }
 
 .link {
-  color: whitesmoke;
+  color: yellow;
 }
 
 .item.header {
