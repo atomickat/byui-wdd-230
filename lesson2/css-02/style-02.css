@@ -16,7 +16,7 @@
 }
 
 a {
-  color: #C2F970;
+  color: #703d57;
 }
 
 header,
@@ -37,13 +37,14 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 h1 {
-  text-align: left;
+  text-align: center;
 
   padding: 10px;
 }
 
 figure {
   text-align: center;
+
 }
 
 .grid-container {
