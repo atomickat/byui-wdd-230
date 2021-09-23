@@ -60,7 +60,7 @@ h1 {
 .item.grid-container {
   display: grid;
   height: 100vh;
-  width: 85vw;
+  width: 90vw;
 
   gap: 10px;
 

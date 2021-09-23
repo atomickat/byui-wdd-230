@@ -1,0 +1,25 @@
+@media (max-width: 1415px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .header {
+    display: block;
+  }
+
+  .main {
+    text-align: left;
+  }
+
+  .footer {
+    line-height: normal;
+  }
+
+  .figure img {
+    width: 20rem;
+  }
+
+
+}
