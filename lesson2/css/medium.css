@@ -1,4 +1,4 @@
-@media (max-width: 1415px) {
+@media (min-width: 760px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,10 +15,6 @@
 
   .footer {
     line-height: normal;
-  }
-
-  .figure img {
-    width: 20rem;
   }
 
 
