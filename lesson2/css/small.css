@@ -6,7 +6,7 @@
   color: yellow;
 }
 
-.body {
+body {
 
   background-color: #8EA8C3;
   margin: 0 auto;
@@ -47,12 +47,12 @@ h1 {
   padding: 10px;
 }
 
-figure {
+picture {
   text-align: center;
 }
 
 img {
-  width: 40%;
+  width: 100%;
 }
 
 .grid-container {

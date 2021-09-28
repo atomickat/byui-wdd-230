@@ -5,15 +5,15 @@
 
   }
 
-  .header {
+  header {
     display: block;
   }
 
-  .main {
+  main {
     text-align: left;
   }
 
-  .footer {
+  footer {
     line-height: normal;
   }
 
