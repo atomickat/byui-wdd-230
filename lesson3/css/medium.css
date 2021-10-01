@@ -1,0 +1,23 @@
+@media only screen and (min-width: 37.5em) {
+
+
+  nav ul {
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  img {
+    max-width: 380px;
+
+  }
+
+  main {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+}

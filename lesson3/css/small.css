@@ -1,14 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Yaldevi&display=swap');
 
-/* https: //coolors.co/c2f970-703d57-406e8e-8ea8c3-ffeaee */
-
-#lastupdated {
-  color: yellow;
-}
+/* https: //coolors.co/0d1821-344966-b4cded-f0f4ef-bfcc94 */
 
 body {
 
-  background-color: #8EA8C3;
+  background-color: #bfcc94;
+  color: #0d1821;
   margin: 0 auto;
   height: 100vh;
   width: 90vw;
@@ -16,35 +13,49 @@ body {
 
 }
 
-a {
-  color: #703d57;
-}
-
 header,
 footer {
-  background-color: #703d57;
-  color: whitesmoke;
+  background-color: #344966;
+  color: #b4cded;
   padding: 20px;
   text-align: center;
-  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.byu-link {
-  color: whitesmoke;
+header img {
+  max-width: 100px;
+  width: 100%;
 }
 
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Yaldevi', sans-serif;
 }
 
-h1 h2 h3 h4 h5 h6 {
-  font-family: 'Roboto', sans-serif;
+img {
+  width: 100%;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #344966;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 h1 {
   text-align: center;
-
   padding: 10px;
+  color: #b4cded;
+
 }
 
 picture {
@@ -55,7 +66,51 @@ img {
   width: 100%;
 }
 
-.grid-container {
+nav {
+  background-color: #0d1821;
+
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px;
+  color: #b4cded;
+  text-decoration: none;
+  font-size: 0.95rem;
+  text-align: center;
+  flex: 1 1 100%;
+
+}
+
+ul {
+  display: block;
+
+  /* margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px; */
+}
+
+a:hover {
+
+  background-color: #f0f4ef;
+  color: #0d1821;
+  font-size: 1.25rem;
+  font-weight: bold;
+
+}
+
+/* .grid-container {
 
   max-width: 100%;
   margin: 1rem;
@@ -81,4 +136,4 @@ img {
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
+} */
