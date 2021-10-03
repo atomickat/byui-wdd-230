@@ -3,14 +3,14 @@
 /* https: //coolors.co/0d1821-344966-b4cded-f0f4ef-bfcc94 */
 
 body {
-
+  min-width: 26em;
+  margin: 0 auto;
   background-color: #bfcc94;
   color: #0d1821;
-  margin: 0 auto;
   height: 100vh;
   width: 90vw;
   font-size: 1.1em;
-
+  font-family: 'Yaldevi', sans-serif;
 }
 
 header,
@@ -27,17 +27,17 @@ footer {
 }
 
 header img {
-  max-width: 100px;
+  max-width: 85px;
   width: 100%;
-}
-
-html {
-  font-family: 'Yaldevi', sans-serif;
 }
 
 img {
   width: 100%;
 
+}
+
+.site-map {
+  max-width: 30rem;
 }
 
 h1,
@@ -62,47 +62,68 @@ picture {
   text-align: center;
 }
 
-img {
-  width: 100%;
-}
 
 nav {
   background-color: #0d1821;
-
 }
 
+ul {
+  display: block;
+}
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-
 }
+
 
 nav ul li a {
   display: block;
   padding: 12px;
   color: #b4cded;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   text-align: center;
   flex: 1 1 100%;
 
 }
 
-ul {
-  display: block;
+table,
+th,
+td {
 
-  /* margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px; */
+  border: 1px solid black;
+  padding: .5rem;
+  background-color: white;
+  font-family: 'Montserrat',
+    sans-serif;
+
+}
+
+table tr td+.header-assignment {
+  background-color: #344966;
+  color: #b4cded;
+  font-family: 'Montserrat',
+    sans-serif;
+  font-size: 30px;
+}
+
+table tr td+.nav-assignment {
+  background-color: #0d1821;
+  color: #b4cded;
+  font-size: 30px;
+
+}
+
+table tr td+.headings-assignment {
+  background-color: #bfcc94;
+  color: #344966;
+  font-size: 25px;
 }
 
 a:hover {
-
   background-color: #f0f4ef;
   color: #0d1821;
   font-size: 1.25rem;
@@ -110,30 +131,29 @@ a:hover {
 
 }
 
-/* .grid-container {
-
+.head-grid-container {
   max-width: 100%;
-  margin: 1rem;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 10px 10px;
+  align-items: left;
 }
 
-.grid-item {
+.main-grid-container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
 
-  padding: 10px;
-  background-color: whitesmoke;
-  border-radius: 10px;
 }
 
-.grid-header {
-  padding: .5rem;
-  background-color: #703d57;
-  color: whitesmoke;
-  margin-top: -10px;
-  margin-left: -10px;
-  margin-right: -10px;
+.typo-grid-container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px 10px;
 
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-} */
+}

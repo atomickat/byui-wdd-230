@@ -2,70 +2,114 @@
 <html lang="en">
 
 <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible"
-            content="IE=edge">
-      <meta name="viewport"
-            content="width=device-width, initial-scale=1.0">
-      <title>Sunshine Forecast Weather | Site Plan</title>
-      <meta name="author"
-            content="Barbara Chamberlin">
-      <meta name="description"
-            content="This is the Sunshine Forecast Weather site plan.">
-      <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-      <link rel="stylesheet"
-            href="css/small.css">
-      <link rel="stylesheet"
-            href="css/medium.css">
-      <link rel="stylesheet"
-            href="css/large.css">
-      <script defer
-              src="js/script.js"></script>
-      <link rel="preconnect"
-            href="https://fonts.googleapis.com">
-      <link rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yaldevi&display=swap"
-            rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Sunshine Forecast Weather | Site Plan</title>
+  <meta name="author"
+        content="Barbara Chamberlin">
+  <meta name="description"
+        content="This is the Sunshine Forecast Weather site plan.">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet"
+        href="css/small.css">
+  <link rel="stylesheet"
+        href="css/medium.css">
+  <link rel="stylesheet"
+        href="css/large.css">
+  <script defer
+          src="js/script.js"></script>
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yaldevi&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
 
-      <header>
-            <img src="images/sun-weather-icon.png"
-                 alt="Sunshine Forecast Logo Icon">
-            <h1>Sunshine Forecast Weather</h1>
-            <p>Forecast Is Our Middle Name</p>
-      </header>
-      <nav>
-            <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="color-scheme.html">Color Scheme</a></li>
-                  <li><a href="target-audience.html">Target Audience</a></li>
-                  <li><a href="typography.html">Typography</a></li>
-            </ul>
-      </nav>
+  <header class="head-grid-container">
 
-      <main>
+    <div>
+      <img src="images/sun-weather-icon.png"
+           alt="Sunshine Forecast Logo Icon">
+    </div>
+    <div>
+      <h1>Sunshine Forecast Weather</h1>
+      <p>Forecast Is Our Middle Name</p>
+    </div>
 
-            <h2>Typography</h2>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="color-scheme.html">Color Scheme</a></li>
+      <li><a href="target-audience.html">Target Audience</a></li>
+      <li><a href="typography.html">Typography</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <div class="typo-grid-container">
 
-            <picture>
-                  <h2>Site Map</h2>
-                  <img src="images/weather-site-map-sfw.jpg"
-                       alt="site map">
-            </picture>
+      <div>
+        <h2>Typography</h2>
+        <table>
+          <tr>
+            <td>Site Header & Footer</td>
+            <td>Montserrat</td>
+            <td>30px</td>
+            <td class="header-assignment">#b4cded</td>
+            <td class="header-assignment">Sample</td>
+          </tr>
+          <tr>
+            <td>Primary Navigation</td>
+            <td>Yaldevi</td>
+            <td>30px</td>
+            <td class="nav-assignment">#0d1821</td>
+            <td class="nav-assignment">Sample</td>
+          </tr>
+          <tr>
+            <td>Heading 2 - 6</td>
+            <td>Montserrat</td>
+            <td>30px 25px 20px</td>
+            <td class="headings-assignment">#344966</td>
+            <td class="headings-assignment">Sample</td>
+          </tr>
+          <tr>
+            <td>Paragraph Text</td>
+            <td>Yaldevi</td>
+            <td>16px</td>
+            <td>#0d1821</td>
+            <td>Sample</td>
+          </tr>
+        </table>
+      </div>
 
-      </main>
+      <div>
+        <picture>
+          <h2>Site Map</h2>
+          <img class="site-map"
+               src="images/weather-site-map-sfw.jpg"
+               alt="site map">
+        </picture>
 
-      <footer>
+      </div>
+    </div>
 
-            &copy; <span id="copyrightyear"></span>
-      </footer>
+  </main>
+
+  <footer>
+
+    &copy; <span id="copyrightyear"></span>
+    <p> | Footer</p>
+  </footer>
 </body>
 
 </html>
