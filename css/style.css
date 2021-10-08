@@ -17,6 +17,9 @@ body {
   background-color: #82AEB1;
   margin: 0 auto;
   max-width: max-content;
+  height: 100vh;
+  display: flex;
+
 
 }
 
