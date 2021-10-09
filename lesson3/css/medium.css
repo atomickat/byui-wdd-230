@@ -1,14 +1,20 @@
 @media only screen and (min-width: 37.5em) {
 
-
-  nav ul {
+  .navigation {
     display: flex;
-    justify-content: space-around;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation li:first-child {
+    display: none;
   }
 
   img {
     max-width: 380px;
-
   }
 
   main {
@@ -19,30 +25,9 @@
     text-align: left;
   }
 
-  header,
-  footer {
-    padding: 20px;
-  }
-
-  nav>ul>li {
-    width: 25%;
-    height: 100%;
-    /* float: left; */
-
-  }
-
-  .head-grid-container {
-
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: none;
-  }
-
   .main-grid-container {
-
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
-
   }
 
   .typo-grid-container {
@@ -51,15 +36,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 10px 10px;
-
   }
 
   .typo-grid-container {
-
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
-
-
   }
 
 

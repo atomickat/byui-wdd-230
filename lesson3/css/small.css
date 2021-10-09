@@ -127,35 +127,6 @@ nav {
   display: block;
 }
 
-
-
-/* nav {
-  background-color: #0d1821;
-}
-
-ul {
-  display: block;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-
-nav ul li a {
-  display: block;
-  padding: 12px;
-  color: #b4cded;
-  text-decoration: none;
-  font-size: 1.25rem;
-  text-align: center;
-  flex: 1 1 100%;
-
-} */
-
 table,
 th,
 td {
