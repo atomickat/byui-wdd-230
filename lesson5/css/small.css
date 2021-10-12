@@ -32,7 +32,6 @@ header img {
   padding-left: 15px;
   padding-right: 15px;
   max-width: 85px;
- 
 }
 
 section {
@@ -76,8 +75,12 @@ footer p {
   background: linear-gradient(#b4cded, #bfcc94);
   opacity: 70%;
   padding: 10px;
+  box-shadow: 0 0 30px rgb(52, 126, 116);
 }
 
+hr {
+  border:1px solid #344966;
+}
 
 h1,
 h2,
@@ -99,6 +102,10 @@ h2 {
   text-align: center;
   padding: 15px;
   margin: 5px;
+}
+
+h3 {
+  margin: 0;
 }
 
 nav {
