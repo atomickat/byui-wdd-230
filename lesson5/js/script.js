@@ -5,11 +5,6 @@ const currentyear = { weekday: 'long', day: 'numeric', month: 'long', year: 'num
 
 document.getElementById("currentyear").textContent = new Date().toLocaleDateString('en-US', currentyear);
 
-// let currentyear = new Date();
-// document.getElementById("currentyear").textContent = new Date().toLocaleDateString("en-US", currentyear);
-
-
-
 
 const menubutton = document.querySelector('.menu');
 const mainnav = document.querySelector('.navigation')
@@ -17,3 +12,17 @@ const mainnav = document.querySelector('.navigation')
 menubutton.addEventListener('click', () => { mainnav.classList.toggle('responsive') }, false);
 
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+
+// const banner = document.querySelector('.cooking');
+// const banner = document.querySelector('.pancakes');
+// banner.addEventListener('load',('banner') => {if (dayOfWeek == 6)});
+
+
+// console.log(dayName)
+// if (dayOfWeek == 6) {
+// 	const banner = document.createElement("div");
+// 	const bannerText = document.createElement("p");
+// 	bannerText.textContent = banner;
+// 	banner.appendChild(bannerText);
+// 	document.appendChild(banner);
+// }
