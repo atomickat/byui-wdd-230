@@ -18,11 +18,3 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 // banner.addEventListener('load',('banner') => {if (dayOfWeek == 6)});
 
 
-// console.log(dayName)
-// if (dayOfWeek == 6) {
-// 	const banner = document.createElement("div");
-// 	const bannerText = document.createElement("p");
-// 	bannerText.textContent = banner;
-// 	banner.appendChild(bannerText);
-// 	document.appendChild(banner);
-// }
