@@ -11,6 +11,7 @@ body {
   width: 100vw;
   font-size: 1.1em;
   font-family: 'Yaldevi', sans-serif;
+
 }
 
 .pancakes p {
@@ -58,17 +59,44 @@ section p {
 .hero-container {
   position: relative;
   margin: 10px auto;
-
 }
 
-.hero-ph {
-  max-width: 100px;
+main div picture.hero-ph {
+  width: 96%;
+  margin: 0;
+}
+
+main div picture.hero-ph img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article picture.art-pic {
+  width: 100%;
+  clear: both;
+}
+
+
+article picture.art-pic img {
+  min-width: 50%;
+  max-width: 500px;
+  float: left;
+  margin: 0 10px 0 0;
+  
+}
+
+article p {
+  margin: 0;
+}
+
+article {
+  padding: 15px;
 }
 
 .weathersummary {
-  position: absolute;
-  top: 40px;
-  left: 50px;
+  margin: 15px;
   background: linear-gradient(#b4cded, #bfcc94);
   opacity: 70%;
   padding: 10px;
@@ -103,17 +131,18 @@ h2 {
 
 h3 {
   margin: 0;
+  padding: 15px;
+  text-align: center;
 }
 
 nav {
   background-color: #0d1821;
-  margin: -18px auto;
 }
 
 .navigation {
   list-style: none;
   padding: 0;
-
+  margin: 0;
 }
 
 .navigation li:first-child {
@@ -140,33 +169,39 @@ nav {
   font-weight: bold;
 }
 
+main {
+  max-width: 95%;
+  margin: 0 auto;
+
+}
+
+
 .responsive li {
   display: block;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
+footer {
+  justify-content: space-around;
+  clear: both;
 }
 
-.main-container p {
-  padding: 15px;
-  margin: 5px;
+footer img {
   background-color: #bfcc94;
+  margin: 5px;
+  border-radius: 5px;
 }
 
-footer p {
+footer div.cry-media {
+  margin-left: 15px;
   padding: 5px;
-  margin: 0;
   flex-flow: column;
-  align-items: center;
 }
 
-footer a {
+footer div.vcard a {
   color: #b4cded;
 }
 
-footer a:hover {
+footer div.vcard a:hover {
   color: #bfcc94;
 }
 

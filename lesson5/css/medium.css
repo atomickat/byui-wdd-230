@@ -20,4 +20,18 @@
     display: none;
   }
 
+  main div section.weathersummary {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+  
+  }
+
+  article picture.art-pic img {
+    padding-bottom: 15px;
+    min-width: 25%;
+
+  }
+
+
 }

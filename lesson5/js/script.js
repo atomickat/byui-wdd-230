@@ -14,7 +14,8 @@ menubutton.addEventListener('click', () => { mainnav.classList.toggle('responsiv
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 
 // const banner = document.querySelector('.cooking');
+// const dayOfWeek = 
 // const banner = document.querySelector('.pancakes');
-// banner.addEventListener('load',('banner') => {if (dayOfWeek == 6)});
+// banner.addEventListener('load',('pancakes') => {if (dayOfWeek == 4)});
 
 

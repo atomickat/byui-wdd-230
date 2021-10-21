@@ -20,8 +20,9 @@ submit.addEventListener('click', function () {
   
   list.appendChild(listItem);
 
-  deleteBtn.onclick = function(e) {
+  deleteBtn.onclick = function (e) {
     list.removeChild(listItem);
+    input.focus();    
   }
 
   input.focus();    
