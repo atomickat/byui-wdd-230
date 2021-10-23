@@ -7,8 +7,7 @@ body {
   margin: 0 auto;
   background-color: whitesmoke;
   color: #0d1821;
-  height: 100vh;
-  width: 100vw;
+  width: 100vh;
   font-size: 1.1em;
   font-family: 'Yaldevi', sans-serif;
 
@@ -46,23 +45,24 @@ header img {
   max-width: 85px;
 }
 
-section {
+header section {
   display: flex;
   flex-direction: column;
 }
 
-section p {
+header section p {
   align-self: center;
   margin: 5px;
 }
 
 .hero-container {
-  position: relative;
   margin: 10px auto;
+  position: relative;
+  width: 100%;
 }
 
 main div picture.hero-ph {
-  width: 96%;
+  width: 100%;
   margin: 0;
 }
 
@@ -71,20 +71,39 @@ main div picture.hero-ph img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  
 }
+
+.weathersummary {
+  margin: 15px;
+  background: linear-gradient(#b4cded, #bfcc94);
+  opacity: 70%;
+  padding: 10px;
+  box-shadow: 0 0 30px rgb(52, 126, 116);
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+
+.ws-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
 
 article picture.art-pic {
   width: 100%;
   clear: both;
-}
 
+}
 
 article picture.art-pic img {
   min-width: 50%;
   max-width: 500px;
   float: left;
   margin: 0 10px 0 0;
-  
+
 }
 
 article p {
@@ -95,13 +114,7 @@ article {
   padding: 15px;
 }
 
-.weathersummary {
-  margin: 15px;
-  background: linear-gradient(#b4cded, #bfcc94);
-  opacity: 70%;
-  padding: 10px;
-  box-shadow: 0 0 30px rgb(52, 126, 116);
-}
+
 
 hr {
   border: 1px solid #344966;
@@ -169,15 +182,37 @@ nav {
   font-weight: bold;
 }
 
+.responsive li {
+  display: block;
+}
+
+
 main {
   max-width: 95%;
   margin: 0 auto;
 
 }
 
+.forecast {
+  display: flex;
+  flex-flow: row wrap;
+}
 
-.responsive li {
+.forecast-day {
+  flex: 1 1 auto;
+  background-color: #b4cded;
+  border: 1px solid black;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.day {
   display: block;
+  padding: 5px;
+  border-bottom: 1px solid black;
+  text-align: center;
 }
 
 footer {
@@ -205,24 +240,3 @@ footer div.vcard a:hover {
   color: #bfcc94;
 }
 
-.forecast {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.forecast-day {
-  flex: 1 1 auto;
-  background-color: #b4cded;
-  border: 1px solid black;
-  text-align: center;
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 5px;
-}
-
-.day {
-  display: block;
-  padding: 5px;
-  border-bottom: 1px solid black;
-  text-align: center;
-}
