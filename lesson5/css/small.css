@@ -62,20 +62,24 @@ header section p {
 }
 
 main div picture.hero-ph {
-  width: 100%;
-  margin: 0;
-}
+  /* width: 100%;
+  /* margin: 0 auto; */
+  /* border: 1px red dashed;  */
+   display: block;
+   width: 96%;
+   margin: 0 2%;
+}  
 
 main div picture.hero-ph img {
-  max-width: 100%;
+  /* width: 100%; */
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
+  max-width: 96%;
+  margin: 0 auto;
 }
 
+
 .weathersummary {
-  margin: 15px;
+  margin: 5px;
   background: linear-gradient(#b4cded, #bfcc94);
   opacity: 70%;
   padding: 10px;
@@ -88,14 +92,21 @@ main div picture.hero-ph img {
 .ws-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.ws-title {
+  justify-self: right;
 }
 
 
 article picture.art-pic {
   width: 100%;
   clear: both;
-
 }
 
 article picture.art-pic img {
@@ -103,7 +114,6 @@ article picture.art-pic img {
   max-width: 500px;
   float: left;
   margin: 0 10px 0 0;
-
 }
 
 article p {
@@ -113,8 +123,6 @@ article p {
 article {
   padding: 15px;
 }
-
-
 
 hr {
   border: 1px solid #344966;
@@ -140,12 +148,6 @@ h2 {
   text-align: center;
   padding: 15px;
   margin: 5px;
-}
-
-h3 {
-  margin: 0;
-  padding: 15px;
-  text-align: center;
 }
 
 nav {
@@ -186,12 +188,15 @@ nav {
   display: block;
 }
 
+  /* ----------------MAIN------------- */
 
 main {
   max-width: 95%;
   margin: 0 auto;
 
 }
+
+
 
 .forecast {
   display: flex;
@@ -214,6 +219,8 @@ main {
   border-bottom: 1px solid black;
   text-align: center;
 }
+
+/* -------------FOOTER--------------- */
 
 footer {
   justify-content: space-around;

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+  <meta name="author"
+        content="Barbara Chamberlin">
+  <meta name="description"
+        content="This is a DOM manipulation /(Book of Mormon top 25 favorite chapters/) practice in JavaScript.">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet"
+        href="css/style.css">
+  <script defer
+          src="js/script.js"></script>
+</head>
+
+<body>
+  <h1>📘 Book of Mormon - Top 25</h1>
+  <main>
+    <div class="input">
+      <label>Enter Book and Chapter<br>
+        <input type="text"
+               placeholder="Alma 5"
+               maxLength=17
+               list="booksOfMormon"
+               required></label>
+      <datalist id="booksOfMormon">
+        <option value="1 Nephi"></option>
+        <option value="2 Nephi"></option>
+        <option value="Jacob"></option>
+        <option value="Enos"></option>
+        <option value="Jarom"></option>
+        <option value="Omni"></option>
+        <option value="Jacob"></option>
+        <option value="Words of Mormon"></option>
+        <option value="Mosiah"></option>
+        <option value="Alma"></option>
+        <option value="Helaman"></option>
+        <option value="3 Nephi"></option>
+        <option value="4 Nephi"></option>
+        <option value="Mormon"></option>
+        <option value="Ether"></option>
+        <option value="Moroni"></option>
+      </datalist>
+
+      <button type="submit">Add Chapter</button>
+    </div>
+    <div class="listcontainer">
+      <ul class="list">
+      </ul>
+    </div>
+  </main>
+
+</body>
+
+</html>

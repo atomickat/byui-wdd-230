@@ -8,8 +8,6 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
   <title>Sunshine Forecastn Idaho</title>
-  <meta name="author"
-        content="Barbara Chamberlin">
   <meta name="description"
         content="This is the Sunshine Forecast - Preston Idaho page.">
   <link rel="shortcut icon"
@@ -31,11 +29,12 @@
         crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yaldevi&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
   <div class="pancakes">
-    <p class="cooking">
+    <p>
       🥞 Saturday, come join us for “Pancakes in the Park”
       at 9:00 am at Preston Community Park. 😋
     </p>
@@ -68,61 +67,93 @@
     <h2>Preston Idaho</h2>
 
     <div class="hero-container">
-      <div class="hero-ph">
-        <img src="images/hero-img.jpg"
+      <picture class="hero-ph">
+        <img src="images/hero-800.jpg"
              alt="hero image">
-      </div>
+      </picture>
+
       <section class="weathersummary">
         <h3>Weather Summary
           <hr />
         </h3>
-        <p>Currently: <span id="current">Partly Cloudy</span></p>
-        <p>High: <span id="high">68</span> &deg;</p>
-        <p>Wind Chill: <span id="wind-chill">68</span> &deg;</p>
-        <p>Humidity: <span id="humid">43</span> %</p>
-        <p>Wind Speed: <span id="wind-speed">6</span> mph</p>
+        <div class="ws-grid">
+          <span class="ws-title">Currently: </span>
+          <span id="current"> Partly Cloudy</span>
+          <span class="ws-title">High: </span>
+          <div><span id="high"> 68</span>&deg;</div>
+          <span class="ws-title">Wind Chill: </span>
+          <div><span id="wind-chill"> 68</span>&deg;</div>
+          <span class="ws-title">Humidity: </span>
+          <div><span id="humid"> 43</span> %</div>
+          <span class="ws-title">Wind Speed: </span>
+          <div><span id="wind-speed"> 6</span> mph</div>
       </section>
     </div>
+
     <h3>5 Day Forecast</h3>
     <div class="forecast">
       <div class="forecast-day">
-        <span class="day">Monday</span>
+        <div class="day">Monday</div>
         <img src="images/cloud-with-rain.png"
              alt="rain icon">
-        <span>Rainy</span>
+        <div>Rainy</div>
       </div>
       <div class="forecast-day">
-        <span class="day">Tuesday</span>
+        <div class="day">Tuesday</div>
         <img src="images/cloud-with-snow.png"
              alt="snow icon">
-        <span>Snowy</span>
+        <div>Snowy</div>
       </div>
       <div class="forecast-day">
-        <span class="day">Wednesday</span>
+        <div class="day">Wednesday</div>
         <img src="images/cloud-with-lightning-and-rain.png"
              alt="storm icon">
-        <span>Stormy</span>
+        <div>Stormy</div>
       </div>
       <div class="forecast-day">
-        <span class="day">Thursday</span>
+        <div class="day">Thursday</div>
         <img src="images/sun-behind-small-cloud.png"
              alt="cloud icon">
-        <span>Cloudy</span>
+        <div>Cloudy</div>
       </div>
       <div class="forecast-day">
-        <span class="day">Friday</span>
+        <div class="day">Friday</div>
         <img src="images/sun.png"
              alt="sun icon">
-        <span>Sunny</span>
+        <div>Sunny</div>
       </div>
     </div>
+    <article>
+      <h3>Off The Beaten Trail</h3>
+      <picture class="art-pic">
+        <img src="images/the-trail-960.webp"
+             alt="mountain trail">
+      </picture>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel ullamcorper lacus. Phasellus justo augue,
+        luctus quis sagittis semper, aliquam et orci. Nulla a ligula elit. Nunc ut sapien justo. Phasellus urna tellus,
+        pretium finibus finibus in, bibendum ac est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        tempus dui mauris, id sagittis lacus iaculis et. Maecenas turpis arcu, fringilla non libero a, porttitor mollis
+        magna. Curabitur aliquam malesuada tellus in maximus. In sodales felis ipsum, non pretium dui consequat
+        pharetra.
+      </p>
+      <br>
+      <p>
+        Morbi viverra at ex vitae placerat. Sed efficitur lectus vel semper venenatis. Phasellus in placerat justo, at
+        posuere lectus. Nunc ullamcorper dictum magna, a tincidunt tortor viverra eu. Donec nec lobortis lectus, non
+        ornare odio. Phasellus ultrices nisi ac elit lobortis aliquet. In dapibus ullamcorper augue non pharetra.
+      </p>
+      <br>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere quam eu augue sollicitudin placerat vitae
+        id lacus. Pellentesque sed sapien risus. Suspendisse eros lectus, elementum ut vulputate at, pulvinar vitae
+        nulla. Aliquam ullamcorper nec diam et molestie. Duis auctor vel massa et vulputate. Quisque porta enim
+        venenatis aliquam ullamcorper. Praesent tempus, sem eleifend feugiat tempor, velit diam maximus massa, vel
+        egestas ante odio sed nulla.
+      </p>
 
-    <div class="main-container">
-      <p>Hero w/ weather summary</p>
-      <p>5 Day Forecast</p>
-      <p>Article</p>
-      <p>Contact Information</p>
-    </div>
+    </article>
+
   </main>
 
   <footer>
@@ -144,18 +175,28 @@
         <div class="email"><a href="mailto:sunshineforecast@gmail.com">sunshineforecast@gmail.com</a></div>
       </p>
     </div>
+    <div class="cry-media">
+      <p> &copy; <span id="copyrightyear"></span> &#160; Sunshine Forecast | <span id="currentyear"></span></p>
 
-    <p> &copy; <span id="copyrightyear"></span> &#160; Sunshine Forecast </p>
-    <p><span id="currentyear"></span></p>
-
-    <a href="#"><img src="images/facebook.png"
-           alt="Sunshine Forecast's Facebook page link."></a>
-    <a href="#"><img src="images/instagram.png"
-           alt="Sunshine Forecast's Instagram account link."></a>
-    <a href="#"><img src="images/twitter.png"
-           alt="Sunshine Forecast's Twitter site link."></a>
+      <a href="#"><img src="images/facebook.png"
+             alt="Sunshine Forecast's Facebook page link."></a>
+      <a href="#"><img src="images/instagram.png"
+             alt="Sunshine Forecast's Instagram account link."></a>
+      <a href="#"><img src="images/twitter.png"
+             alt="Sunshine Forecast's Twitter site link."></a>
+    </div>
 
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Montserrat'
+        'Yaldevi'
+        ]
+      }
+    });
+  </script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Yaldevi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Yaldevi&display=swap'); */
 
 /* https://coolors.co/0d1821-344966-b4cded-f0f4ef-bfcc94-ffd447 */
 
@@ -7,10 +7,10 @@ body {
   margin: 0 auto;
   background-color: whitesmoke;
   color: #0d1821;
-  height: 100vh;
-  width: 100vw;
+  width: 100vh;
   font-size: 1.1em;
   font-family: 'Yaldevi', sans-serif;
+
 }
 
 .pancakes p {
@@ -45,34 +45,83 @@ header img {
   max-width: 85px;
 }
 
-section {
+header section {
   display: flex;
   flex-direction: column;
 }
 
-section p {
+header section p {
   align-self: center;
   margin: 5px;
 }
 
 .hero-container {
-  position: relative;
   margin: 10px auto;
-
+  position: relative;
+  width: 100%;
 }
 
-.hero-ph {
-  max-width: 100px;
+main div picture.hero-ph {
+  /* width: 100%;
+  /* margin: 0 auto; */
+  /* border: 1px red dashed;  */
+  display: block;
+  width: 96%;
+  margin: 0 2%;
 }
+
+main div picture.hero-ph img {
+  /* width: 100%; */
+  display: block;
+  max-width: 96%;
+  margin: 0 auto;
+}
+
 
 .weathersummary {
-  position: absolute;
-  top: 40px;
-  left: 50px;
+  margin: 5px;
   background: linear-gradient(#b4cded, #bfcc94);
   opacity: 70%;
   padding: 10px;
   box-shadow: 0 0 30px rgb(52, 126, 116);
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+
+.ws-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.ws-title {
+  justify-self: right;
+}
+
+
+article picture.art-pic {
+  width: 100%;
+  clear: both;
+}
+
+article picture.art-pic img {
+  min-width: 50%;
+  max-width: 500px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+article p {
+  margin: 0;
+}
+
+article {
+  padding: 15px;
 }
 
 hr {
@@ -101,19 +150,14 @@ h2 {
   margin: 5px;
 }
 
-h3 {
-  margin: 0;
-}
-
 nav {
   background-color: #0d1821;
-  margin: -18px auto;
 }
 
 .navigation {
   list-style: none;
   padding: 0;
-
+  margin: 0;
 }
 
 .navigation li:first-child {
@@ -144,31 +188,15 @@ nav {
   display: block;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
+/* ----------------MAIN------------- */
+
+main {
+  max-width: 95%;
+  margin: 0 auto;
+
 }
 
-.main-container p {
-  padding: 15px;
-  margin: 5px;
-  background-color: #bfcc94;
-}
 
-footer p {
-  padding: 5px;
-  margin: 0;
-  flex-flow: column;
-  align-items: center;
-}
-
-footer a {
-  color: #b4cded;
-}
-
-footer a:hover {
-  color: #bfcc94;
-}
 
 .forecast {
   display: flex;
@@ -190,4 +218,31 @@ footer a:hover {
   padding: 5px;
   border-bottom: 1px solid black;
   text-align: center;
+}
+
+/* -------------FOOTER--------------- */
+
+footer {
+  justify-content: space-around;
+  clear: both;
+}
+
+footer img {
+  background-color: #bfcc94;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+footer div.cry-media {
+  margin-left: 15px;
+  padding: 5px;
+  flex-flow: column;
+}
+
+footer div.vcard a {
+  color: #b4cded;
+}
+
+footer div.vcard a:hover {
+  color: #bfcc94;
 }
