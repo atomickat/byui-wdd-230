@@ -61,6 +61,7 @@ header section p {
   max-width: 960px;
 }
 
+
 main div picture.hero-ph {
   display: block;
   width: 96%;
@@ -176,9 +177,9 @@ nav {
 /* ----------------MAIN------------- */
 
 main {
-  max-width: 95%;
+  max-width: 1200px;
   margin: 0 auto;
-
+  
 }
 
 
