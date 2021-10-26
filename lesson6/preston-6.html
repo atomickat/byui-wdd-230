@@ -22,6 +22,10 @@
         href="css/large.css">
   <script defer
           src="js/script.js"></script>
+  <script defer
+          src="js/banner.js"></script>
+  <script defer
+          src="js/wind-chill.js"></script>
   <link rel="preconnect"
         href="https://fonts.googleapis.com">
   <link rel="preconnect"
@@ -32,7 +36,7 @@
 
 </head>
 
-<body>
+<body >
   <div class="pancakes">
     <p>
       🥞 Saturday, come join us for “Pancakes in the Park”
@@ -68,8 +72,15 @@
 
     <div class="hero-container">
       <picture class="hero-ph">
-        <img src="images/hero-800.jpg"
-             alt="hero image">
+        <source media="(max-width: 300px)"
+                srcset="images/wk6-300.jpg">
+        <source media="(max-width: 500px)"
+                srcset="images/wk6-500.jpg">
+        <source media="(min-width: 960px)"
+                srcset="images/wk6-960.jpg">
+        <img src="images/wk6-960.jpg"
+             alt="hero images"
+             sizes="100vw">
       </picture>
 
       <section class="weathersummary">
@@ -82,7 +93,7 @@
           <span class="ws-title">High: </span>
           <div><span id="high"> 68</span>&deg;</div>
           <span class="ws-title">Wind Chill: </span>
-          <div><span id="wind-chill"> 68</span>&deg;</div>
+          <div><span id="wind-chill"> </span>&deg;</div>
           <span class="ws-title">Humidity: </span>
           <div><span id="humid"> 43</span> %</div>
           <span class="ws-title">Wind Speed: </span>
@@ -192,7 +203,7 @@
     WebFont.load({
       google: {
         families: ['Montserrat'
-        'Yaldevi'
+          'Yaldevi'
         ]
       }
     });
