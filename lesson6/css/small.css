@@ -70,10 +70,18 @@ main div picture.hero-ph {
 
 main div picture.hero-ph img {
   width: 100%;
+  padding-bottom: 15px;
+
 }
 
 .weathersummary {
+  padding: 10px 0 10px 0;
   box-shadow: 0 0 5px rgb(52, 96, 126);
+  background: linear-gradient(#b4cded, #bfcc94);
+  max-width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .ws-grid {
