@@ -13,8 +13,7 @@ body {
 
 }
 
-.pancakes p {
-  display: none;
+.pancakes {
   background-color: #FFD447;
   padding: 10px;
   margin-bottom: -0.1em;

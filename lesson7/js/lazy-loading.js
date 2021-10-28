@@ -21,8 +21,8 @@ if ('IntersectionObserver' in window) {
         });
     }, imgOptions);
 
-    imagesToLoad.forEach(image => {
-        imgObserver.observe(image);
+      imagesToLoad.forEach(image => {
+      imgObserver.observe(image);
     });
 }
 else {

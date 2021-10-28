@@ -5,6 +5,7 @@ const currentyear = { weekday: 'long', day: 'numeric', month: 'long', year: 'num
 
 document.getElementById("currentyear").textContent = new Date().toLocaleDateString('en-US', currentyear);
 
+
 const menubutton = document.querySelector('.menu');
 const mainnav = document.querySelector('.navigation')
 
