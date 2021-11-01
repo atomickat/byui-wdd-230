@@ -61,8 +61,7 @@ header section p {
 }
 
 h1,
-h2,
-  {
+h2 {
   color: #344966;
   font-family: 'Montserrat', sans-serif;
 }
@@ -130,6 +129,7 @@ main {
 footer {
   justify-content: space-around;
   clear: both;
+  padding: 10px 0 15px 10px;
 }
 
 footer img {
