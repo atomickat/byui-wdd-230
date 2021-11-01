@@ -26,6 +26,8 @@ figure {
 
 figure img {
   width: 100%;
+  filter: blur(0px);
+  transition: filter 0.75s;
 }
 
 header,
