@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+
+  <title>Form Input Validation</title>
+  <meta name="description"
+        content="This page is for the educational purpose of learning more about form input validation.">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet"
+        href="style.css">
+  <script defer
+          src="script.js"></script>
+
+
+</head>
+
+<body>
+  <h1>Form Input Validation Playground</h1>
+  <h4>* Required fields</h4>
+
+  <div class="form">
+    <form name="myForm"
+          action="results.html"
+          method="get">
+      <div>
+        <label for="uname">* Username: <input type="text"
+                 name="Username"
+                 id="uname"
+                 placeholder="username"
+                 pattern="[a-zA-Z0-9-!_#]{6,20}"
+                 title="Username must be between 6 - 20 characters using letters, numbers, and symbols i.e. _ - ! # ."
+                 required><span></span></label>
+      </div>
+      <br>
+      <div>
+        <label for="password">* Password:
+          <input type="password"
+                 name="Password"
+                 id="password"
+                 minlength="8"
+                 maxlength="10"
+                 required><span></span><br>
+          <input type="checkbox"
+                 onclick="myFunction()">Show Password
+
+        </label>
+      </div>
+      <br>
+      <div>
+        <label for="email">* Email: <input type="email"
+                 name="Email"
+                 id="email"
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                 required><span></span>
+        </label>
+      </div>
+      <br>
+      <div>
+        <label for="phone">* Phone: <input type="tel"
+                 name="Phone"
+                 id="phone"
+                 placeholder="(XXX) XXX-XXXX"
+                 pattern="\([0-9]{3}\)[\s]{1}[0-9]{3}-[0-9]{4}"
+                 required>
+          <span></span>
+        </label>
+      </div>
+      <br>
+      <div>
+        <label for="age">Age: <input type="number"
+                 name="Age"
+                 id="age"
+                 min="8"
+                 max="120"><span></span>
+        </label>
+      </div>
+      <br>
+      <div>
+        <label for="date">Brithdate: <input type="date"
+                 name="Brithdate"
+                 id="date"
+                 min="1922-01-01"
+                 max="2011-12-31"><span></span>
+        </label>
+      </div>
+      <br>
+      <div>
+        <label for="website">Favorite Website: <input type="url"
+                 name="Favorite Website"
+                 id="website"
+                 placeholder="https://..."
+                 pattern="https?://.+" ><span></span>
+        </label>
+      </div>
+      <br>
+      <button type="submit"
+              id="submit"
+              class="submit"
+              onclick="reportValidity()">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
