@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Yaldevi&display=swap');
-
-/* https://coolors.co/0d1821-344966-b4cded-f0f4ef-bfcc94-ffd447 */
 
 body {
   min-width: 26em;
@@ -11,17 +8,6 @@ body {
   font-size: 1.1em;
   font-family: 'Yaldevi', sans-serif;
 
-}
-
-.pancakes {
-  background-color: #FFD447;
-  padding: 10px;
-  margin-bottom: -0.1em;
-  font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-weight: bold;
-  color: #0d1821;
 }
 
 header,
@@ -54,74 +40,6 @@ header section p {
   margin: 5px;
 }
 
-.hero-container {
-  margin: 10px auto;
-  position: relative;
-  max-width: 960px;
-}
-
-
-main div picture.hero-ph {
-  display: block;
-  width: 96%;
-  margin: 0 2%;
-}
-
-main div picture.hero-ph img {
-  width: 100%;
-  padding-bottom: 15px;
-
-}
-
-.weathersummary {
-  padding: 10px 0 10px 0;
-  box-shadow: 0 0 5px rgb(52, 96, 126);
-  background: linear-gradient(#b4cded, #bfcc94);
-  max-width: 95%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto
-}
-
-.ws-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-h3 {
-  margin: 15px 0 10px 0;
-  text-align: center;
-}
-
-.ws-title {
-  justify-self: right;
-}
-
-
-article picture.art-pic {
-  width: 100%;
-  clear: both;
-}
-
-article picture.art-pic img {
-  width: 50%;
-  float: left;
-  margin: 0 10px 0 0;
-}
-
-article p {
-  margin: 0;
-}
-
-article {
-  padding: 15px;
-}
-
-section.weathersummary h3 {
-  border-bottom: 2px solid #7d8da3;
-
-}
-
 h1,
 h2,
 h3,
@@ -136,12 +54,6 @@ section h1 {
   color: #b4cded;
   margin: 0;
   align-self: center;
-}
-
-h2 {
-  text-align: center;
-  padding: 15px;
-  margin: 5px;
 }
 
 nav {
@@ -190,28 +102,13 @@ main {
 
 }
 
+main div {
+  background-color: aquamarine;
+  display: grid;
+  
+  padding: 15px;
+  
 
-
-.forecast {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.forecast-day {
-  flex: 1 1 auto;
-  background-color: #b4cded;
-  border: 1px solid black;
-  text-align: center;
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 5px;
-}
-
-.day {
-  display: block;
-  padding: 5px;
-  border-bottom: 1px solid black;
-  text-align: center;
 }
 
 /* -------------FOOTER--------------- */
