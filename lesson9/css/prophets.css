@@ -1,0 +1,33 @@
+:root {
+  background-color: rgb(248, 234, 217);
+}
+
+div.cards {
+  background-color: rgb(245, 220, 187);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding-bottom: 20px;
+  
+}
+
+h2, p {
+ padding-left: 15px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  margin-bottom: 15px;
+}

@@ -20,7 +20,8 @@ fetch(requestURL)
       let card = document.createElement('section');
 
       let h2 = document.createElement('h2');
-      h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+      // h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+      h2.textContent = `${prophets[i].name} ${prophets[i].lastname}`;
 
       let dob = document.createElement('p');
 
