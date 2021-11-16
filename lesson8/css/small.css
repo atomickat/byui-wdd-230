@@ -131,6 +131,10 @@ nav ul li.active a {
 
 }
 
+figure {
+  margin: 0 auto;
+}
+
 /* ----------------FORM---------------------- */
 
 .stormForm {
