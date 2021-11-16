@@ -1,9 +1,26 @@
 @media only screen and (min-width: 32.5em) {
 
 
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+  }
+
+  fieldset {
+    width: 90%;
+
+  }
+
+  .facts {
+    width: 90%;
+
+  }
+
+
   .navigation {
     display: flex;
-
   }
 
   .navigation li {
@@ -25,6 +42,12 @@
     top: 20px;
     left: 25px;
     position: absolute;
+  }
+
+  header,
+  footer {
+    flex-direction: row;
+
   }
 
 }
