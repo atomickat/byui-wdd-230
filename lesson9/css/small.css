@@ -160,6 +160,7 @@ nav {
 
 .navigation li {
   display: none;
+
 }
 
 .navigation a {
@@ -171,21 +172,41 @@ nav {
   font-size: 1.25rem;
 }
 
-.navigation a:hover {
-  background-color: #f0f4ef;
+.navigation li:hover {
+    background-color: #f0f4ef;
+    color: #0d1821;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.navigation li a:hover {
   color: #0d1821;
-  font-size: 1.25rem;
-  font-weight: bold;
+ 
 }
 
 .active {
-  background-color: #FFD447;
+  background-color: #bfcc94;
 }
+
+.active a {
+  color: #0d1821;
+  font-weight: bold;
+}
+
+
+
 .responsive li {
   display: block;
 }
 
 /* ----------------MAIN------------- */
+.wk-h {
+  color: darkred;
+}
+
+.wk-l {
+  color: darkblue;
+}
 
 main {
   max-width: 960px;
