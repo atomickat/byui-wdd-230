@@ -178,11 +178,15 @@ nav {
   font-weight: bold;
 }
 
-.active a{
-  background-color: #b4cded;
+.active a {
   color: #0d1821;
   font-weight: bold;
 }
+
+.active {
+  background-color: #b4cded;
+}
+
 .responsive li {
   display: block;
 }
