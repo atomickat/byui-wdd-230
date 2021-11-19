@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
   background-color: whitesmoke;
   color: #0d1821;
-  width: 100vh;
+  /* width: 100vh; */
   font-size: 1.1em;
   font-family: 'Yaldevi', sans-serif;
 
@@ -116,6 +116,14 @@ nav {
   display: block;
 }
 
+.active a {
+  color: #0d1821;
+  font-weight: bold;
+}
+
+.active {
+  background-color: #bfcc94;
+}
 /* ----------------MAIN------------- */
 
 main {

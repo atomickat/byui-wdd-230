@@ -160,6 +160,7 @@ nav {
 
 .navigation li {
   display: none;
+
 }
 
 .navigation a {
@@ -171,11 +172,20 @@ nav {
   font-size: 1.25rem;
 }
 
-.navigation a:hover {
-  background-color: #f0f4ef;
+.navigation li:hover {
+    background-color: #f0f4ef;
+    color: #0d1821;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.navigation li a:hover {
   color: #0d1821;
-  font-size: 1.25rem;
-  font-weight: bold;
+ 
+}
+
+.active {
+  background-color: #bfcc94;
 }
 
 .active a {
@@ -183,9 +193,7 @@ nav {
   font-weight: bold;
 }
 
-.active {
-  background-color: #b4cded;
-}
+
 
 .responsive li {
   display: block;

@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
   background-color: whitesmoke;
   color: #0d1821;
-  width: 100vh;
+  /* width: 100vh; */
   font-size: 1.1em;
   font-family: 'Yaldevi', sans-serif;
 
@@ -38,6 +38,25 @@ header section {
 header section p {
   align-self: center;
   margin: 5px;
+}
+
+.hero-container {
+  margin: 10px auto;
+  position: relative;
+  max-width: 960px;
+}
+
+
+main div picture.hero-ph {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+main div picture.hero-ph img {
+  width: 100%;
+  padding-bottom: 15px;
+
 }
 
 h1,
@@ -100,6 +119,8 @@ nav ul li.active a {
   font-weight: bold;
 
 }
+
+
 
 /* ----------------MAIN------------- */
 .red {
