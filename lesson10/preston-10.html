@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Preston Home Page</title>
+  <meta name="description"
+        content="This is the Preston Idaho page and this week we are using API to auto fill weather data.">
+  <link rel="shortcut icon"
+        href="images/favicon.ico">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet"
+        href="css/small.css">
+  <link rel="stylesheet"
+        href="css/medium.css">
+  <link rel="stylesheet"
+        href="css/large.css">
+  <script defer
+          src="js/script.js"></script>
+  <script defer
+          src="js/banner.js"></script>
+  <script defer
+          src="js/weather-summary.js"></script>
+  <script defer
+          src="js/five-day-forecast.js"></script>
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yaldevi&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+  <div>
+    <p class="pancakes">
+      🥞 Saturday, come join us for “Pancakes in the Park”
+      at 9:00 am at Preston Community Park. 😋
+    </p>
+
+  </div>
+  <header>
+
+    <img src="images/sun-weather-icon.png"
+         alt="Sunshine Forecast Logo Icon">
+
+    <section>
+      <h1>Sunshine Forecast</h1>
+      <p>We take our day sunny side up.</p>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a class="menu"
+           href="#">&#9776; Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="#">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <h2>Preston Idaho</h2>
+
+    <div class="hero-container">
+      <picture class="hero-ph">
+        <source media="(max-width: 300px)"
+                srcset="images/preston-300.jpg">
+        <source media="(max-width: 500px)"
+                srcset="images/preston-500.jpg">
+        <source media="(min-width: 960px)"
+                srcset="images/preston-960.jpg">
+        <img src="images/preston-960.jpg"
+             alt="hero images">
+      </picture>
+
+      <section class="weathersummary">
+        <h3>Weather Summary</h3>
+        <div class="ws-grid">
+          <span class="ws-title">Currently: &nbsp;</span>
+          <span id="current"> </span>
+          <span class="ws-title">High: &nbsp;</span>
+          <div><span id="high"> </span>&deg;</div>
+          <span class="ws-title">Low: &nbsp;</span>
+          <div><span id="low"> </span>&deg;</div>
+          <span class="ws-title">Wind Chill: &nbsp;</span>
+          <div><span id="wind-chill"> </span>&deg;</div>
+          <span class="ws-title">Humidity: &nbsp;</span>
+          <div><span id="humid"> </span> %</div>
+          <span class="ws-title">Wind Speed: &nbsp;</span>
+          <div><span id="wind-speed"> </span> mph</div>
+        </div>
+      </section>
+    </div>
+
+    <h3>5 Day Forecast</h3>
+    <div class="forecast">
+      <div class="forecast-day">
+        <div class="day" id="day1">Monday</div>
+        <img id="icon1" src="images/cloud-with-rain.png"
+             alt="rain icon">
+        <div><span id="high1"
+                class="wk-h">56</span>&deg;&nbsp;&nbsp;<span id="low1"
+                class="wk-l">32</span>&deg;</div>
+      </div>
+
+      <div class="forecast-day">
+        <div class="day" id="day2">Tuesday</div>
+        <img id="icon2"
+             src="images/cloud-with-snow.png"
+             alt="snow icon">
+         <div><span id="high2"
+                 class="wk-h">56</span>&deg;&nbsp;&nbsp;<span id="low2"
+                 class="wk-l">32</span>&deg;</div>
+      </div>
+
+      <div class="forecast-day">
+        <div class="day" id="day3">Wednesday</div>
+        <img id="icon3"
+             src="images/cloud-with-lightning-and-rain.png"
+             alt="storm icon">
+         <div><span id="high3"
+                 class="wk-h">56</span>&deg;&nbsp;&nbsp;<span id="low3"
+                 class="wk-l">32</span>&deg;</div>
+      </div>
+
+      <div class="forecast-day">
+        <div class="day" id="day4">Thursday</div>
+        <img id="icon4"
+             src="images/sun-behind-small-cloud.png"
+             alt="cloud icon">
+         <div><span id="high4"
+                 class="wk-h">56</span>&deg;&nbsp;&nbsp;<span id="low4"
+                 class="wk-l">32</span>&deg;</div>
+      </div>
+
+      <div class="forecast-day">
+        <div class="day" id="day5">Friday</div>
+        <img id="icon5"
+             src="images/sun.png"
+             alt="sun icon">
+         <div><span id="high5"
+                 class="wk-h">56</span>&deg;&nbsp;&nbsp;<span id="low5"
+                 class="wk-l">32</span>&deg;</div>
+      </div>
+    </div>
+
+
+    <article>
+      <h3>Off The Beaten Trail</h3>
+      <picture class="art-pic">
+        <img src="images/the-trail-960.webp"
+             alt="mountain trail">
+      </picture>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel ullamcorper lacus. Phasellus justo augue,
+        luctus quis sagittis semper, aliquam et orci. Nulla a ligula elit. Nunc ut sapien justo. Phasellus urna tellus,
+        pretium finibus finibus in, bibendum ac est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+        tempus dui mauris, id sagittis lacus iaculis et. Maecenas turpis arcu, fringilla non libero a, porttitor mollis
+        magna. Curabitur aliquam malesuada tellus in maximus. In sodales felis ipsum, non pretium dui consequat
+        pharetra.
+      </p>
+      <br>
+      <p>
+        Morbi viverra at ex vitae placerat. Sed efficitur lectus vel semper venenatis. Phasellus in placerat justo, at
+        posuere lectus. Nunc ullamcorper dictum magna, a tincidunt tortor viverra eu. Donec nec lobortis lectus, non
+        ornare odio. Phasellus ultrices nisi ac elit lobortis aliquet. In dapibus ullamcorper augue non pharetra.
+      </p>
+      <br>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere quam eu augue sollicitudin placerat vitae
+        id lacus. Pellentesque sed sapien risus. Suspendisse eros lectus, elementum ut vulputate at, pulvinar vitae
+        nulla. Aliquam ullamcorper nec diam et molestie. Duis auctor vel massa et vulputate. Quisque porta enim
+        venenatis aliquam ullamcorper. Praesent tempus, sem eleifend feugiat tempor, velit diam maximus massa, vel
+        egestas ante odio sed nulla.
+      </p>
+
+    </article>
+
+  </main>
+
+  <footer>
+
+    <div class="vcard">
+      <div class="org">Sunshine Forecast</div>
+      <div class="adr">
+        <a href="https://goo.gl/maps/pkMykZqhob49MrN48">
+          <div class="street-address">450 E 800 S.</div>
+          <span class="locality">Preston</span>,
+          <span class="region">ID</span>,
+          <span class="postal-code">83263</span>
+        </a>
+      </div>
+      <br>
+      <div class="tel">(208) 867-5309</div>
+      <br>
+      <div class="email"><a href="mailto:sunshineforecast@gmail.com">sunshineforecast@gmail.com</a></div>
+
+    </div>
+    <div class="cry-media">
+      <p> &copy; <span id="copyrightyear"></span> &#160; Sunshine Forecast | <span id="currentyear"></span></p>
+
+      <a href="#"><img src="images/facebook.png"
+             alt="Sunshine Forecast's Facebook page link."></a>
+      <a href="#"><img src="images/instagram.png"
+             alt="Sunshine Forecast's Instagram account link."></a>
+      <a href="#"><img src="images/twitter.png"
+             alt="Sunshine Forecast's Twitter site link."></a>
+    </div>
+
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Montserrat', 'Yaldevi']
+      }
+    });
+  </script>
+</body>
+
+</html>

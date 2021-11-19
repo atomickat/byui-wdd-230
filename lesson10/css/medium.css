@@ -1,0 +1,39 @@
+@media only screen and (min-width: 32.5em) {
+
+
+  .navigation {
+    display: flex;
+
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .weathersummary {
+    margin: 5px;
+    background: linear-gradient(#b4cded, #bfcc94);
+    opacity: 70%;
+    padding: 10px;
+    box-shadow: 0 0 30px rgb(52, 126, 116);
+    max-width: fit-content;
+    top: 20px;
+    left: 25px;
+    position: absolute;
+  }
+
+  .forecast {
+    display: flex;
+  }
+
+  .forecast-day {
+    max-width: 640px;
+    margin: 0 auto;
+
+  }
+}
