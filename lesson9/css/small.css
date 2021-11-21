@@ -200,6 +200,13 @@ nav {
 }
 
 /* ----------------MAIN------------- */
+.cards {
+  background-color: #bfcc94;
+  margin: 10px auto;
+  position: relative;
+  max-width: 960px;
+}
+
 .wk-h {
   color: darkred;
 }
