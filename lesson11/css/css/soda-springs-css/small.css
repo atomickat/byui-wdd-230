@@ -1,0 +1,112 @@
+/* ---------- event banner ---------- */
+
+.pancakes {
+  background-color: #FFD447;
+  padding: 10px;
+  margin-bottom: -0.1em;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: #0d1821;
+}
+
+/* ---------- hero img ---------- */
+
+.hero-container {
+  margin: 10px auto;
+  position: relative;
+  max-width: 960px;
+}
+
+
+main div picture.hero-ph {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+main div picture.hero-ph img {
+  width: 100%;
+  padding-bottom: 15px;
+
+}
+
+/* ---------- weather summary ---------- */
+
+.weathersummary {
+  padding: 10px 0 10px 0;
+  box-shadow: 0 0 5px rgb(52, 96, 126);
+  background: linear-gradient(#b4cded, #bfcc94);
+  max-width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.ws-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ws-title {
+  justify-self: right;
+}
+
+section.weathersummary h3 {
+  border-bottom: 2px solid #7d8da3;
+}
+
+/* ---------- article ---------- */
+
+article picture.art-pic {
+  width: 100%;
+  clear: both;
+}
+
+article picture.art-pic img {
+  width: 50%;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+article p {
+  margin: 0;
+}
+
+article {
+  padding: 15px;
+}
+
+/* ---------- forecast ---------- */
+.wk-h {
+  color: darkred;
+}
+
+.wk-l {
+  color: darkblue;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+.forecast-day {
+  flex: 1 1 auto;
+  background-color: #b4cded;
+  border: 1px solid black;
+  text-align: center;
+  width: 75%;
+  margin: 15px auto;
+  padding: 5px;
+}
+
+.day {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+

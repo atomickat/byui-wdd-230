@@ -1,0 +1,22 @@
+
+/* ---------- thanks page ---------- */
+
+.thanks {
+  background-color: #bfcc94;
+  padding: 15px;
+  text-align: center;
+}
+
+iframe {
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  width: 85%;
+}
+
+figcaption {
+  text-align: center;
+}
+

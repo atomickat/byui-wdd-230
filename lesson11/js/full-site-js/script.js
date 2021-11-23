@@ -1,13 +1,11 @@
-
-
+// ---------------------- copyright -------------
 document.getElementById("copyrightyear").textContent = new Date().getFullYear();
-
 
 const currentyear = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
 
 document.getElementById("currentyear").textContent = new Date().toLocaleDateString('en-US', currentyear);
 
-
+//  ------------------- menu nav ------------
 const menubutton = document.querySelector('.menu');
 const mainnav = document.querySelector('.navigation')
 

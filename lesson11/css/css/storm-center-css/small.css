@@ -1,0 +1,104 @@
+/* ---------- hero img ---------- */
+
+.hero-container {
+  margin: 10px auto;
+  position: relative;
+  max-width: 960px;
+}
+
+main div picture.hero-ph {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+main div picture.hero-ph img {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+/* ---------- facts & myths ---------- */
+
+.red {
+  color: darkred;
+  font-weight: bold;
+}
+
+.green {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.stormForm,
+.facts {
+  background-color: #b4cded;
+  padding: 15px;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 75%;
+}
+
+/* ---------- form ---------- */
+
+.stormForm {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#ratingvalue {
+  color: blue;
+  font-weight: bold;
+}
+
+fieldset {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 75%;
+
+}
+
+label.top {
+  display: block;
+  padding-top: 1rem;
+}
+
+label.top input,
+label.top textarea,
+label[for="danger"] {
+  display: block;
+  border-radius: 4px;
+  padding: .75rem 0;
+  width: 100%;
+  max-width: 20rem;
+}
+
+#top {
+  padding-top: 15px;
+}
+
+.reportBtn {
+  max-width: 20rem;
+  border-radius: .5rem;
+  background-color: #bfcc94;
+  color: #0d1821;
+  font-weight: bold;
+  letter-spacing: .1em;
+  padding: 5px;
+  border-color: gray;
+}
+
+input[type="radio"] {
+  width: 25px;
+  height: 25px;
+  margin: .5em;
+}
+
+
