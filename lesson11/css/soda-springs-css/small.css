@@ -1,3 +1,8 @@
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 /* ---------- event banner ---------- */
 
 .pancakes {
@@ -85,12 +90,6 @@ article {
 
 .wk-l {
   color: darkblue;
-}
-
-main {
-  max-width: 960px;
-  margin: 0 auto;
-
 }
 
 .forecast-day {

@@ -1,0 +1,35 @@
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ---------- hero img ---------- */
+
+.hero-container {
+  margin: 10px auto;
+  position: relative;
+  max-width: 960px;
+}
+
+
+main div picture.hero-ph {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+main div picture.hero-ph img {
+  width: 100%;
+  padding-bottom: 15px;
+
+}
+
+/* ---------- cards ---------- */
+
+.cards {
+  background-color: #bfcc94;
+  margin: 10px auto;
+  position: relative;
+  max-width: 960px;
+}
+
