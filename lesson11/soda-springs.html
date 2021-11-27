@@ -41,6 +41,8 @@
           src="js/soda-springs-js/weather-summary.js"></script>
   <script defer
           src="js/soda-springs-js/five-day-forecast.js"></script>
+  <script defer
+          src="js/soda-springs-js/lazy-loading.js"></script>
 
   <link rel="preconnect"
         href="https://fonts.googleapis.com">
@@ -177,36 +179,71 @@
     </div>
 
 
-    <article>
-      <h3>Off The Beaten Trail</h3>
-      <picture class="art-pic">
-        <img src="images/the-trail-960.webp"
-             alt="mountain trail">
-      </picture>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel ullamcorper lacus. Phasellus justo augue,
-        luctus quis sagittis semper, aliquam et orci. Nulla a ligula elit. Nunc ut sapien justo. Phasellus urna tellus,
-        pretium finibus finibus in, bibendum ac est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-        tempus dui mauris, id sagittis lacus iaculis et. Maecenas turpis arcu, fringilla non libero a, porttitor mollis
-        magna. Curabitur aliquam malesuada tellus in maximus. In sodales felis ipsum, non pretium dui consequat
-        pharetra.
-      </p>
-      <br>
-      <p>
-        Morbi viverra at ex vitae placerat. Sed efficitur lectus vel semper venenatis. Phasellus in placerat justo, at
-        posuere lectus. Nunc ullamcorper dictum magna, a tincidunt tortor viverra eu. Donec nec lobortis lectus, non
-        ornare odio. Phasellus ultrices nisi ac elit lobortis aliquet. In dapibus ullamcorper augue non pharetra.
-      </p>
-      <br>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere quam eu augue sollicitudin placerat vitae
-        id lacus. Pellentesque sed sapien risus. Suspendisse eros lectus, elementum ut vulputate at, pulvinar vitae
-        nulla. Aliquam ullamcorper nec diam et molestie. Duis auctor vel massa et vulputate. Quisque porta enim
-        venenatis aliquam ullamcorper. Praesent tempus, sem eleifend feugiat tempor, velit diam maximus massa, vel
-        egestas ante odio sed nulla.
-      </p>
-
-    </article>
+<h3>Myth Busters</h3>
+<div class="picture-container">
+  <picture class="myth-pic">
+    <source media="(max-width: 300px)"
+            srcset="images/soda-springs-images/mb-1-300.jpg">
+    <source media="(max-width: 500px)"
+            srcset="images/soda-springs-images/mb-1-500.jpg">
+    <source media="(min-width: 960px)"
+            srcset="images/soda-springs-images/mb-1-960.jpg">
+    <img src="images/soda-springs-images/placeholder.jpg"
+         data-src="images/soda-springs-images/mb-1-960.jpg"
+         alt="myth: you can't get sunburnt in winder">
+  </picture>
+  <picture class="myth-pic">
+    <source media="(max-width: 300px)"
+            srcset="images/soda-springs-images/mb-2-300.jpg">
+    <source media="(max-width: 500px)"
+            srcset="images/soda-springs-images/mb-2-500.jpg">
+    <source media="(min-width: 960px)"
+            srcset="images/soda-springs-images/mb-2-960.jpg">
+    <img src="images/soda-springs-images/placeholder.jpg"
+         data-src="images/soda-springs-images/mb-2-960.jpg"
+         alt="myth: it can be too cold for snow">
+  </picture>
+  <picture class="myth-pic">
+    <source media="(max-width: 300px)"
+            srcset="images/soda-springs-images/mb-3-300.jpg">
+    <source media="(max-width: 500px)"
+            srcset="images/soda-springs-images/mb-3-500.jpg">
+    <source media="(min-width: 960px)"
+            srcset="images/soda-springs-images/mb-3-960.jpg">
+    <img src="images/soda-springs-images/placeholder.jpg"
+         data-src="images/soda-springs-images/mb-3-960.jpg" alt="myth: if it thunderstorms in winter, it well snow seven days later">
+  </picture>
+  <picture class="myth-pic">
+    <source media="(max-width: 300px)"
+            srcset="images/soda-springs-images/mb-4-300.jpg">
+    <source media="(max-width: 500px)"
+            srcset="images/soda-springs-images/mb-4-500.jpg">
+    <source media="(min-width: 960px)"
+            srcset="images/soda-springs-images/mb-4-960.jpg">
+    <img src="images/soda-springs-images/placeholder.jpg"
+         data-src="images/soda-springs-images/mb-4-960.jpg" alt="myth: going outside in cold weather will make you sick">
+  </picture>
+  <picture class="myth-pic">
+    <source media="(max-width: 300px)"
+            srcset="images/soda-springs-images/mb-5-300.jpg">
+    <source media="(max-width: 500px)"
+            srcset="images/soda-springs-images/mb-5-500.jpg">
+    <source media="(min-width: 960px)"
+            srcset="images/soda-springs-images/mb-5-960.jpg">
+    <img src="images/soda-springs-images/placeholder.jpg"
+         data-src="images/soda-springs-images/mb-5-960.jpg" alt="myth: you should open your windows if a tornado is coming towards your house">
+  </picture>
+  <picture class="myth-pic">
+    <source media="(max-width: 300px)"
+            srcset="images/soda-springs-images/mb-6-300.jpg">
+    <source media="(max-width: 500px)"
+            srcset="images/soda-springs-images/mb-6-500.jpg">
+    <source media="(min-width: 960px)"
+            srcset="images/soda-springs-images/mb-6-960.jpg">
+    <img src="images/soda-springs-images/placeholder.jpg"
+         data-src="images/soda-springs-images/mb-6-960.jpg" alt="myth: water flows in different directions depending on which hemisphere you're in">
+  </picture>
+</div>
 
   </main>
 
@@ -215,14 +252,14 @@
     <div class="vcard">
       <div class="org">Sunshine Forecast</div>
       <div class="adr">
-        <a href="https://goo.gl/maps/pkMykZqhob49MrN48">
-          <div class="street-address">450 E 800 S.</div>
-          <span class="locality">Preston</span>,
+        <a href="https://goo.gl/maps/aqMdaiz6gWe8m6Rw8">
+          <div class="street-address">213 E 2nd S.</div>
+          <span class="locality">Soda Springs</span>,
           <span class="region">ID</span>,
-          <span class="postal-code">83263</span>
+          <span class="postal-code">83276</span>
         </a>
       </div>
-      <div class="tel">(208) 867-5309</div>
+      <div class="tel">(208) 235-5390</div>
       <br>
       <div class="email"><a href="mailto:sunshineforecast@gmail.com">sunshineforecast@gmail.com</a></div>
 
@@ -239,14 +276,6 @@
     </div>
 
   </footer>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ['Montserrat', 'Yaldevi']
-      }
-    });
-  </script> -->
 </body>
 
 </html>

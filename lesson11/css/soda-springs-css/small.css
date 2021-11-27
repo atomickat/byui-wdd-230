@@ -62,27 +62,6 @@ section.weathersummary h3 {
   border-bottom: 2px solid #7d8da3;
 }
 
-/* ---------- article ---------- */
-
-article picture.art-pic {
-  width: 100%;
-  clear: both;
-}
-
-article picture.art-pic img {
-  width: 50%;
-  float: left;
-  margin: 0 10px 0 0;
-}
-
-article p {
-  margin: 0;
-}
-
-article {
-  padding: 15px;
-}
-
 /* ---------- forecast ---------- */
 .wk-h {
   color: darkred;
@@ -109,3 +88,22 @@ article {
   text-align: center;
 }
 
+/* ---------- myth busters ---------- */
+
+.picture-container {
+  margin: 10px auto;
+  position: relative;
+  max-width: 960px;
+}
+
+
+div picture.myth-pic {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+div picture.myth-pic img {
+  width: 100%;
+  padding-bottom: 15px;
+}
