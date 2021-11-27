@@ -110,3 +110,20 @@ article {
   text-align: center;
 }
 
+/* ---------- video ---------- */
+div h3 {
+  clear: both;
+}
+
+iframe {
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  width: 85%;
+}
+
+figcaption {
+  text-align: center;
+}
