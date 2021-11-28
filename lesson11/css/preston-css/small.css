@@ -111,6 +111,7 @@ article {
 }
 
 /* ---------- video ---------- */
+
 div h3 {
   clear: both;
 }
@@ -127,3 +128,14 @@ iframe {
 figcaption {
   text-align: center;
 }
+
+/* ---------- events ---------- */
+
+#events {
+  background-color: #b4cded;
+  color: #0d1821;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #0d1821;
+}
+
