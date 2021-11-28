@@ -33,12 +33,6 @@
   <link rel="stylesheet"
         href="css/fish-haven-css/large.css">
 
-  <script defer
-          src="js/full-site-js/script.js"></script>
-  <script defer
-          src="js/full-site-js/lazy-loading.js"></script>
-
-
 
   <script defer
           src="js/fish-haven-js/banner.js"></script>
@@ -46,6 +40,11 @@
           src="js/fish-haven-js/weather-summary.js"></script>
   <script defer
           src="js/fish-haven-js/five-day-forecast.js"></script>
+
+  <script defer
+          src="js/full-site-js/script.js"></script>
+  <script defer
+          src="js/full-site-js/lazy-loading.js"></script>
 
   <link rel="preconnect"
         href="https://fonts.googleapis.com">
@@ -183,20 +182,21 @@
 
     <h3>Winter Precipitation</h3>
     <div class="picture-container">
-      <picture class="winter-precipitation">
+      <picture class="precip">
         <source media="(max-width: 300px)"
                 srcset="images/fish-heaven-images/winter-precipitation-300.jpg">
         <source media="(max-width: 500px)"
                 srcset="images/fish-heaven-images/winter-precipitation-500.jpg">
         <source media="(min-width: 960px)"
-                srcset="images/fish-heaven-images/winter-precipitation-806.jpg">
-        <img src="images/fish-heaven-images/placeholder-806.jpg"
-             data-src="images/fish-heaven-images/winter-precipitation-806.jpg"
+                srcset="images/fish-heaven-images/winter-precipitation-960.jpg">
+        <img src="images/fish-heaven-images/placeholder-960.jpg"
+             data-src="images/fish-heaven-images/winter-precipitation-960.jpg"
              alt="winter winter precipitation information">
       </picture>
+      <figcaption>NOAA: &nbsp; <a href="https://www.weather.gov/fsd/winter_preparedness">Winter Preparedness</a>
+      </figcaption>
     </div>
-     <h6>NOAA: &nbsp; <a href="https://www.weather.gov/fsd/winter_preparedness">Winter Preparedness</a>
-     </h6>
+
     <ul>
       <li>
         <bold><strong>Snow:</strong></bold> Frozen precipitation that never melts during its descent to the surface

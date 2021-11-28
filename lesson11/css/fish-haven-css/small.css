@@ -90,19 +90,23 @@ section.weathersummary h3 {
 
 /* ---------- winter precipitation ---------- */
 
-.picture-container {
+.pic-container {
   margin: 10px auto;
   position: relative;
-  max-width: 806px;
+  max-width: 960px;
 }
 
-div picture.winter-precipitation {
+div picture.precip {
   display: block;
   width: 96%;
   margin: 0 2%;
 }
 
-div picture.winter-precipitation {
+div picture.precip img {
   width: 100%;
   padding-bottom: 15px;
+}
+
+figcaption {
+  text-align: center;
 }
