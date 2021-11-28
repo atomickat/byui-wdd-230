@@ -35,6 +35,9 @@
 
   <script defer
           src="js/full-site-js/script.js"></script>
+  <script defer
+          src="js/full-site-js/lazy-loading.js"></script>
+
 
 
   <script defer
@@ -178,37 +181,46 @@
       </div>
     </div>
 
-
-    <article>
-      <h3>Off The Beaten Trail</h3>
-      <picture class="art-pic">
-        <img src="images/the-trail-960.webp"
-             alt="mountain trail">
+    <h3>Winter Precipitation</h3>
+    <div class="picture-container">
+      <picture class="winter-precipitation">
+        <source media="(max-width: 300px)"
+                srcset="images/fish-heaven-images/winter-precipitation-300.jpg">
+        <source media="(max-width: 500px)"
+                srcset="images/fish-heaven-images/winter-precipitation-500.jpg">
+        <source media="(min-width: 960px)"
+                srcset="images/fish-heaven-images/winter-precipitation-806.jpg">
+        <img src="images/fish-heaven-images/placeholder-806.jpg"
+             data-src="images/fish-heaven-images/winter-precipitation-806.jpg"
+             alt="winter winter precipitation information">
       </picture>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel ullamcorper lacus. Phasellus justo augue,
-        luctus quis sagittis semper, aliquam et orci. Nulla a ligula elit. Nunc ut sapien justo. Phasellus urna tellus,
-        pretium finibus finibus in, bibendum ac est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-        tempus dui mauris, id sagittis lacus iaculis et. Maecenas turpis arcu, fringilla non libero a, porttitor mollis
-        magna. Curabitur aliquam malesuada tellus in maximus. In sodales felis ipsum, non pretium dui consequat
-        pharetra.
-      </p>
-      <br>
-      <p>
-        Morbi viverra at ex vitae placerat. Sed efficitur lectus vel semper venenatis. Phasellus in placerat justo, at
-        posuere lectus. Nunc ullamcorper dictum magna, a tincidunt tortor viverra eu. Donec nec lobortis lectus, non
-        ornare odio. Phasellus ultrices nisi ac elit lobortis aliquet. In dapibus ullamcorper augue non pharetra.
-      </p>
-      <br>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere quam eu augue sollicitudin placerat vitae
-        id lacus. Pellentesque sed sapien risus. Suspendisse eros lectus, elementum ut vulputate at, pulvinar vitae
-        nulla. Aliquam ullamcorper nec diam et molestie. Duis auctor vel massa et vulputate. Quisque porta enim
-        venenatis aliquam ullamcorper. Praesent tempus, sem eleifend feugiat tempor, velit diam maximus massa, vel
-        egestas ante odio sed nulla.
-      </p>
+    </div>
+     <h6>NOAA: &nbsp; <a href="https://www.weather.gov/fsd/winter_preparedness">Winter Preparedness</a>
+     </h6>
+    <ul>
+      <li>
+        <bold><strong>Snow:</strong></bold> Frozen precipitation that never melts during its descent to the surface
+      </li>
+      <li>
+        <bold><strong>Sleet:</strong></bold> Frozen precipitation falls through a warm layer and melts, then falls
+        through another cold layer that is deep enough to refreeze the raindrops into pellets before hitting the ground.
+      </li>
+      <li>
+        <bold><strong>Freezing Rain:</strong></bold> Frozen precipitation falls through a warm layer and melts, then
+        falls on surfaces that are below freezing and solidifies, resulting in an even coating of ice on streets, trees,
+        cars, and power lines.
+      </li>
+      <li>
+        <bold><strong>Rain:</strong></bold> Frozen precipitation that falls through a deep warm layer and melts into
+        liquid before reaching the ground. Water droplets are classified as rain if they are 0.5 millimeters or greater
+        in size, whereas droplets smaller than 0.5 millimeters are classified as drizzle.
+      </li>
+    </ul>
 
-    </article>
+
+
+
+
 
   </main>
 
@@ -217,14 +229,14 @@
     <div class="vcard">
       <div class="org">Sunshine Forecast</div>
       <div class="adr">
-        <a href="https://goo.gl/maps/pkMykZqhob49MrN48">
-          <div class="street-address">450 E 800 S.</div>
-          <span class="locality">Preston</span>,
+        <a href="https://goo.gl/maps/rK4k8mFegKGpF2s89">
+          <div class="street-address">2703 US-89</div>
+          <span class="locality">Fish Haven</span>,
           <span class="region">ID</span>,
-          <span class="postal-code">83263</span>
+          <span class="postal-code">83287</span>
         </a>
       </div>
-      <div class="tel">(208) 867-5309</div>
+      <div class="tel">(208) 300-1971</div>
       <br>
       <div class="email"><a href="mailto:sunshineforecast@gmail.com">sunshineforecast@gmail.com</a></div>
 
@@ -241,14 +253,6 @@
     </div>
 
   </footer>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ['Montserrat', 'Yaldevi']
-      }
-    });
-  </script> -->
 </body>
 
 </html>
