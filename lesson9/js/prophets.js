@@ -9,41 +9,37 @@
   
 //   .then(function (jsonObject) {
   
-    // temporary checking for valid response and data parsing
-    // console.table(jsonObject);
+//     console.table(jsonObject);
 
-    //   const prophets = jsonObject['prophets'];
+//     const prophets = jsonObject['prophets'];
     
-    // for (let i = 0; i < prophets.length; i++) {
+//     for (let i = 0; i < prophets.length; i++) {
 
-    //   const container = document.querySelector('.cards');
-    //   let card = document.createElement('section');
+//       const container = document.querySelector('.cards');
 
-    //   let h2 = document.createElement('h2');
-      // h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-      // h2.textContent = `${prophets[i].name} ${prophets[i].lastname}`;
+//       let card = document.createElement('section');
+//       let h2 = document.createElement('h2');
+//       let dob = document.createElement('p');
+//       let bp = document.createElement('p');
+//       let image = document.createElement('img');
 
-      // let dob = document.createElement('p');
+//       h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+//       h2.textContent = `${prophets[i].name} ${prophets[i].lastname}`;
+//       dob.textContent = `Birthdate: ${prophets[i].birthdate}`;
+//       dob.textContent = prophets[i].birthdate;
+//       bp.textContent = `Brirthplace: ${ prophets[i].birthplace}`;
+//       image.setAttribute('src', prophets[i].imageurl);
 
-      // dob.textContent = `Birthdate: ${prophets[i].birthdate}`;
-      // dob.textContent = prophets[i].birthdate;
+//       container.appendChild(card);
+//       card.appendChild(h2);
+//       card.appendChild(dob);
+//       card.appendChild(bp);
+//       card.appendChild(image);
 
-  //     let bp = document.createElement('p');
-  //     bp.textContent = `Brirthplace: ${ prophets[i].birthplace}`;
-
-  //     let image = document.createElement('img');
-  //     image.setAttribute('src', prophets[i].imageurl);
-
-  //     container.appendChild(card)
-  //     card.appendChild(h2);
-  //     card.appendChild(dob);
-  //     card.appendChild(bp);
-  //     card.appendChild(image);
-
-  //     document.querySelector('div.cards').appendChild(card);
+//       document.querySelector('div.cards').appendChild(card);
       
-  //   }
-  // });
+//     }
+//   });
 
 // ----- another way to code jason -----
 

@@ -26,10 +26,9 @@ main div picture.hero-ph img {
 
 /* ---------- cards ---------- */
 
-.cards {
+.townCards {
   background-color: #bfcc94;
   margin: 10px auto;
   position: relative;
   max-width: 960px;
 }
-

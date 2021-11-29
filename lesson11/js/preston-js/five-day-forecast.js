@@ -21,7 +21,8 @@ fetch(fiveDay)
       // console.log(theDate);
       document.querySelector(`#day${day + 1}`).textContent = weekdays[theDate.getDay()];
       document.querySelector(`#high${day + 1}`).textContent = forecast.main.temp_max.toFixed(0);
-      document.querySelector(`#low${day + 1}`).textContent = forecast.main.temp_min.toFixed(0);
+      // ---------- api shows the same temp for temp_min & temp_max ----------
+      // document.querySelector(`#low${day + 1}`).textContent = forecast.main.temp_min.toFixed(0);
   
       day++;
      

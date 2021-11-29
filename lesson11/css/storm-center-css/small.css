@@ -41,7 +41,7 @@ main div picture.hero-ph img {
   margin: 0 auto;
   margin-bottom: 10px;
   margin-top: 10px;
-  width: 75%;
+  max-width: 75%;
 }
 
 /* ---------- form ---------- */
@@ -61,7 +61,7 @@ fieldset {
   margin: 0 auto;
   margin-bottom: 10px;
   margin-top: 10px;
-  width: 75%;
+  max-width: 75%;
 
 }
 
