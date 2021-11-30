@@ -67,10 +67,6 @@ section.weathersummary h3 {
   color: darkred;
 }
 
-.wk-l {
-  color: darkblue;
-}
-
 .forecast-day {
   flex: 1 1 auto;
   background-color: #b4cded;
@@ -109,4 +105,27 @@ div picture.precip img {
 
 figcaption {
   text-align: center;
+}
+
+/* ---------- events ---------- */
+
+#events {
+  color: #0d1821;
+  padding: 15px;
+  margin-bottom: 15px;
+
+  border: 20px solid #bfcc94;
+  box-shadow: inset 0px 0px 0px 10px #b4cded;
+  box-sizing: border-box;
+}
+
+.underline {
+  display: block;
+  padding: 5px;
+  border-bottom: 1.5px solid #0d1821;
+  text-align: center;
+}
+
+div.events section {
+  padding-left: 15px;
 }
