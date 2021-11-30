@@ -18,18 +18,16 @@ fetch(apiURL)
     }
     
     let currentCondition = document.querySelector('#current');
-    currentCondition.textContent = jsObject.weather[0].main;
-
     let tempHigh = document.querySelector('#high');
-    tempHigh.textContent = jsObject.main.temp_max.toFixed(0);
-
     let tempLow = document.querySelector('#low');
-    tempLow.textContent = jsObject.main.temp_min.toFixed(0);
-
     let humidity = document.querySelector('#humid');
-    humidity.textContent = jsObject.main.humidity;
-
     let speed = document.querySelector('#wind-speed');
+    
+
+    currentCondition.textContent = jsObject.weather[0].main;
+    tempHigh.textContent = jsObject.main.temp_max.toFixed(0);
+    tempLow.textContent = jsObject.main.temp_min.toFixed(0);
+    humidity.textContent = jsObject.main.humidity;
     speed.textContent = jsObject.wind.speed.toFixed(0);
 
   });

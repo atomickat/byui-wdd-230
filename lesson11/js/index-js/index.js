@@ -20,23 +20,24 @@ fetch(URL)
 
     target.forEach((towns) => {
       console.log(towns)
-      let card = document.createElement('div');
-      let pic = document.createElement('img');
+      
       let town = document.createElement('section');
       let name = document.createElement('h2');
       let motto = document.createElement('h3');
       let yearfounded = document.createElement('p');
       let population = document.createElement('p');
       let rain = document.createElement('p');
+      let card = document.createElement('div');
+      let pic = document.createElement('img');
 
-      pic.setAttribute('src', `images/home-images/${towns.photo}`);
-      pic.setAttribute('alt', towns.name);
       card.setAttribute('class', 'card');
       name.textContent = `${towns.name}`;
       motto.textContent = `${towns.motto}`;
       yearfounded.textContent = `Founded: ${towns.yearFounded}`;
       population.textContent = `Population: ${towns.currentPopulation}`;
-      rain.textContent = `Annual Rain Fall: ${towns.averageRainfall}`;
+      rain.textContent = `Annual Rain Fall: ${towns.averageRainfall.toFixed(0)} '`;
+      pic.setAttribute('src', `images/home-images/${towns.photo}`);
+      pic.setAttribute('alt', towns.name);
 
       town.appendChild(name);
       town.appendChild(motto);
@@ -46,8 +47,6 @@ fetch(URL)
       card.appendChild(pic);
       card.appendChild(town);
   
-   
-
      container.appendChild(card);
 
     })

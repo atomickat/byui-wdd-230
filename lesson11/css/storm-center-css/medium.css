@@ -1,10 +1,15 @@
 @media only screen and (min-width: 32.5em) {
 
-/* ---------- storm reporting ---------- */
+  /* ---------- storm reporting ---------- */
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    max-width: 950px;
+    margin: 0 auto;
+ 
   }
 
   fieldset {
@@ -12,7 +17,7 @@
   }
 
   /* ---------- facts & myths ---------- */
-  
+
   .facts {
     width: 90%;
   }

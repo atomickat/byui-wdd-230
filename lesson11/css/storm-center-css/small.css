@@ -33,6 +33,7 @@ main div picture.hero-ph img {
 .facts {
   background-color: #b4cded;
   padding: 15px;
+ 
 }
 
 .facts {
@@ -41,7 +42,7 @@ main div picture.hero-ph img {
   margin: 0 auto;
   margin-bottom: 10px;
   margin-top: 10px;
-  max-width: 75%;
+  max-width: 85%;
 }
 
 /* ---------- form ---------- */
@@ -49,7 +50,7 @@ main div picture.hero-ph img {
 .stormForm {
   display: flex;
   flex-direction: column;
-
+  padding: 30px;
 }
 
 #ratingvalue {
@@ -61,7 +62,7 @@ fieldset {
   margin: 0 auto;
   margin-bottom: 10px;
   margin-top: 10px;
-  max-width: 75%;
+  max-width: 85%;
 
 }
 
@@ -100,5 +101,7 @@ input[type="radio"] {
   height: 25px;
   margin: .5em;
 }
+
+
 
 
