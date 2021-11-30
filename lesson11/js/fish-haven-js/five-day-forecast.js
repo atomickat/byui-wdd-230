@@ -21,6 +21,8 @@ fetch(fiveDay)
       //  console.log(forecast);
       document.querySelector(`#day${day + 1}`).textContent = weekdays[theDate.getDay()];
       document.querySelector(`#high${day + 1}`).textContent = forecast.main.temp_max.toFixed(0);
+      document.querySelector(`#icon${day + 1}`).setAttribute('src', `https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`);
+      document.querySelector(`#icon${day + 1}`).setAttribute('alt', forecast.weather[0].description);
     
   
       day++;

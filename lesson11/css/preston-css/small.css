@@ -140,10 +140,14 @@ figcaption {
 .underline {
   display: block;
   padding: 5px;
-  border-bottom: 1.5px solid #0d1821;
+  border-bottom: 1.5px solid red;
   text-align: center;
 }
 
 div.events section {
   padding-left: 15px;
+}
+
+h4 {
+  text-align: center;
 }

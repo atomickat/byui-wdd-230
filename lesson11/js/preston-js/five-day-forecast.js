@@ -13,7 +13,6 @@ fetch(fiveDay)
     const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     let day = 0;
 
-    
       
     sixOclock.forEach(forecast => {
       let theDate = new Date(forecast.dt_txt);
@@ -23,6 +22,9 @@ fetch(fiveDay)
       document.querySelector(`#high${day + 1}`).textContent = forecast.main.temp_max.toFixed(0);
       // ---------- api shows the same temp for temp_min & temp_max ----------
       // document.querySelector(`#low${day + 1}`).textContent = forecast.main.temp_min.toFixed(0);
+
+      document.querySelector(`#icon${day + 1}`).setAttribute('src', `https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`);
+      document.querySelector(`#icon${day + 1}`).setAttribute('alt', forecast.weather[0].description);
   
       day++;
      
