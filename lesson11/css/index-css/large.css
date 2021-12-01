@@ -28,4 +28,8 @@
     max-width: 100%;
     
   }
+
+  div.card:nth-child(odd) {
+    direction: ltr;
+  }
 }

@@ -75,3 +75,7 @@ h3 {
   padding: 25px;
   margin: 0;
 }
+
+div.card:nth-child(odd) {
+  direction: ltr;
+}
