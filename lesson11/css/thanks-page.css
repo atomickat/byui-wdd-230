@@ -29,3 +29,11 @@ figcaption {
   text-align: center;
 }
 
+figure.video {
+  max-width: 960px;
+  margin: 0 auto;
+  
+  text-align: center;
+  padding: 15px;
+}
+
