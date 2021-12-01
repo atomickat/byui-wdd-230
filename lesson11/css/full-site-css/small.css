@@ -37,6 +37,7 @@ header img {
 header section {
   display: flex;
   flex-direction: column;
+  padding: 15px;
 }
 
 header section p {

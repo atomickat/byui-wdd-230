@@ -103,8 +103,12 @@ div picture.precip img {
   padding-bottom: 15px;
 }
 
-figcaption {
+p {
   text-align: center;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /* ---------- events ---------- */
