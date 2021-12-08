@@ -19,16 +19,16 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
   <link rel="stylesheet"
-        href="css/full-site-css/small.css">
+        href="css/small.css">
   <link rel="stylesheet"
-        href="css/full-site-css/medium.css">
+        href="css/medium.css">
   <link rel="stylesheet"
-        href="css/full-site-css/large.css">
+        href="css/large.css">
 
 
 
   <script defer
-          src="js/full-site-js/script.js"></script>
+          src="js/script.js"></script>
 
 
 
@@ -67,9 +67,17 @@
   </nav>
 
   <main>
-
-
-
+      <div class="hero-container">
+        <picture class="hero">
+          <source media="(max-width: 300px)"
+                  srcset="images/plane-hero-300.jpg">
+          <source media="(max-width: 500px)"
+                  srcset="images/plane-hero-500.jpg">
+          <source media="(min-width: 960px)"
+                  srcset="images/plane-hero-960.jpg">
+          <img src="images/plane-hero-960.jpg"
+               alt="hero images">
+        </picture>
   </main>
 
   <footer>
