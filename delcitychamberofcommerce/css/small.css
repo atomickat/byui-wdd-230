@@ -1,28 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&family=Spectral:wght@300&display=swap');
 
-root {
-  background-color: #E6EBE0;
+body {
   font-family: 'Spectral', serif;
   margin: 0 auto;
 }
 
-/* ---------- nav ---------- */
 
+/* ---------- header, nav, footer ---------- */
 
-header {
-  background-color: #F4F1BB;
+header, footer,
+footer a {
+  background-color: #5D576B;
+  color: #E6EBE0;
+  display: flex;
   font-family: 'Karla', sans-serif;
 }
 
+header {
+  padding: 15px;
+  justify-content: center;
 
-/* ---------- nav ---------- */
-
-
-nav {
-  
 }
 
+header img {
+  align-self: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 85px;
+}
+
+section {
+  display: flex;
+  flex-direction: column; 
+  padding: 15px;
+}
+
+h1, h1 ~ p {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+h1 ~ p {
+ font-size: 1.5rem;
+}
+
+
+footer {
+  padding: 15px;
+}
+
+nav {
+  background-color: #5D576B;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+
+}
+
+.navigation a {
+  display: block;
+  color: #E6EBE0;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.navigation li:hover {
+    background-color: #F4F1BB;
+    color: #5D576B;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.navigation li a:hover {
+  color: #5D576B;
+}
+
+.active {
+  background-color: #ED6A5A;
+}
+
+.active a {
+  color: #E6EBE0;
+  font-weight: bold;
+}
+
+.responsive li {
+  display: block;
+}
+
+
+/* ---------- div(s) ---------- */
+
+.first {
+  background-color: #E1E7DA;
+}
+.second {
+  background-color: #E0DDE3;
+}
+.third {
+  background-color: #DAE7E6;
+}
+.forth {
+  background-color: #F6F5CB;
+}
+
+
 /* ---------- hero img ---------- */
+
+
 
 .hero-container {
   margin: 10px auto;
@@ -42,16 +145,26 @@ main div picture.hero img {
   padding-bottom: 15px;
 }
 
+.center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
 
-
-/* ---------- footer ---------- */
-
-footer,
-footer a {
-  background-color: #5D576B;
-  color: #F4F1BB;
 }
 
-footer {
-  padding: 15px;
+/* ---------- headings ---------- */
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Karla', sans-serif;
+ 
+  justify-content:center;
+  align-items: center;
 }
