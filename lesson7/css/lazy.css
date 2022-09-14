@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Yaldevi&display=swap');
+
+/* https://coolors.co/0d1821-344966-b4cded-f0f4ef-bfcc94-ffd447 */
+
+h1 {
+  color: #344966;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 300px;
+}
+
+img {
+  padding: 3px;
+  filter: blur(0px);
+  transition: filter 0.75s;
+}

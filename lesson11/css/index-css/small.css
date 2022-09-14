@@ -1,0 +1,83 @@
+
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ---------- hero img ---------- */
+
+.hero-container {
+  margin: 10px auto;
+  position: relative;
+  max-width: 960px;
+}
+
+
+main div picture.hero-ph {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}
+
+main div picture.hero-ph img {
+  width: 100%;
+  padding-bottom: 15px;
+
+}
+
+/* ---------- cards ---------- */
+
+div.container {
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  grid-template-rows: 1fr;
+
+  margin-bottom: 10px;
+  gap: 10px 10px;
+
+}
+
+div.card {
+  width: 400px;
+  height: 100%;
+
+  border: 20px solid #bfcc94;
+  box-shadow: inset 0px 0px 0px 10px #b4cded;
+  box-sizing: border-box;
+}
+
+div.card img {
+  width: 95%;
+  margin: 0 auto;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  z-index: -1;
+}
+
+
+div section p {
+  text-align: center;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+section h2 {
+  padding-top: 15px;
+}
+
+h3 {
+  padding: 25px;
+  margin: 0;
+}
+
+div.card:nth-child(odd) {
+  direction: ltr;
+}

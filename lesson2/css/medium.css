@@ -1,0 +1,22 @@
+@media (min-width: 760px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  header {
+    display: block;
+  }
+
+  main {
+    text-align: left;
+  }
+
+  footer {
+    line-height: normal;
+  }
+
+
+
+}

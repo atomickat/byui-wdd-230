@@ -1,0 +1,33 @@
+@media only screen and (min-width: 32.5em) {
+
+  /* ---------- cards ---------- */
+  div.container {
+    width: 85vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+
+
+  div.card {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 10px;
+    gap: 10px 10px;
+
+  }
+
+  div.card img {
+    height: 100%;
+  }
+
+  div.card:nth-child(odd) {
+    direction: rtl;
+  }
+
+}

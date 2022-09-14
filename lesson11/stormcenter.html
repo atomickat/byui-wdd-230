@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Storm Center</title>
+  <meta name="description"
+        content="This is the storm center webpage that allows users to report storm or unusual weather events.">
+
+  <link rel="shortcut icon"
+      href="images/full-site-images/favicon.ico">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <link rel="stylesheet"
+        href="css/full-site-css/small.css">
+  <link rel="stylesheet"
+        href="css/full-site-css/medium.css">
+  <link rel="stylesheet"
+        href="css/full-site-css/large.css">
+
+  <link rel="stylesheet"
+        href="css/storm-center-css/small.css">
+  <link rel="stylesheet"
+        href="css/storm-center-css/medium.css">
+  <link rel="stylesheet"
+        href="css/storm-center-css/large.css">
+
+  <script defer
+          src="js//full-site-js/script.js"></script>
+
+  <script defer
+          src="js/storm-center-js/storm-center.js"></script>
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <img src="images/full-site-images/sun-weather-icon.png"
+         alt="Sunshine Forecast Logo Icon">
+
+    <section>
+      <h1>Sunshine Forecast</h1>
+      <p>We take our day sunny side up.</p>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a class="menu"
+           href="#">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="soda-springs.html">Soda Springs</a></li>
+      <li><a href="fish-haven.html">Fish Haven</a></li>
+      <li class="active"><a href="#">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+     <div class="hero-container">
+       <picture class="hero-ph">
+         <source media="(max-width: 300px)"
+                 srcset="images/storm-center-images/storm-center-300.jpg">
+         <source media="(max-width: 500px)"
+                 srcset="images/storm-center-images/storm-center-500.jpg">
+         <source media="(min-width: 960px)"
+                 srcset="images/storm-center-images/storm-center-960.jpg">
+         <img src="images/storm-center-images/storm-center-960.jpg"
+              alt="hero images">
+       </picture>
+      </div>
+      
+    <div class="grid">
+      <div>
+        <fieldset>
+          <legend>Storm Reporting</legend>
+          <form name="myForm"
+                action="thanks.html"
+                method="get"
+                class="stormForm">
+            <label class="top">* Full Name: <input type="text"
+                     name="Full Name"
+                     pattern="[a-zA-Z]{5, }"
+                     required>
+            </label>
+            <label class="top">Email: <input type="email"
+                     name="Email"
+                     placeholder="user@mydomain.com">
+            </label>
+            <label class="top">* Phone: <input type="tel"
+                     name="Phone"
+                     required>
+            </label>
+            <label class="top">* Zip Code: <input type="number"
+                     name="Zip Code"
+                     required>
+            </label>
+            <label class="top">Storm Date:
+              <input type="date"
+                     name="Storm Date"></label>
+            <label for="whatStorm"
+                   class="top">Storm Type: <input type="text"
+                     list="storm"
+                     id="whatStorm"
+                     name="Storm Type">
+              <datalist id="storm">
+                <option value="">Please Select</option>
+                <option value="Flash Flood">Flash Flood</option>
+                <option value="Hail">Hail</option>
+                <option value="Hurricane">Hurricane</option>
+                <option value="Thunderstorm">Thunderstorm</option>
+                <option value="Tornado">Tornado</option>
+                <option value="Other"></option>
+              </datalist>
+            </label>
+            <label class="top">Storm Severity: &nbsp;
+              <span id="ratingvalue">5</span>
+              <input type="range"
+                     list="tickmarks"
+                     name="Storm Severity"
+                     value="5"
+                     min="1"
+                     max="10"
+                     step="1"
+                     oninput="adjustSlide(this.value)"
+                     onchange="adjustSlide(this.value)">
+              <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+              </datalist>
+            </label>
+            <label class="top">Storm Region: <input type="text"
+                     list="storm-region"
+                     name="Storm Region"
+                     placeholder="Select Region">
+              <datalist id="storm-region">
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+              </datalist>
+            </label>
+            <label for="danger1"
+                   id="top">Are you in danger? </label>
+            <label><input type="radio"
+                     id="danger1"
+                     name="personal-danger"
+                     value="Yes"> Yes</label>
+            <label for="danger2"><input type="radio"
+                     id="danger2"
+                     name="personal-danger"
+                     value="No"> No</label>
+            <label for="danger3"><input type="radio"
+                     id="danger3"
+                     name="personal-danger"
+                     value="Maybe"> Maybe</label>
+            <label class="top">Additional Comments: <textarea name="comment"
+                        maxlength="500"></textarea></label>
+            <br>
+            <button type="submit"
+                    class="reportBtn">My Storm Report</button>
+          </form>
+
+        </fieldset>
+      </div>
+      <div class="facts">
+        <h2>Severe Weather Facts & Myths </h2>
+        <p>
+          <span class="red">Myth:</span> Highway and interstate overpasses are safe shelters against a tornado.
+          <br>
+          <br>
+          <span class="green">Fact:</span> Overpasses can concentrate the tornado winds, causing them to be
+          significantly stronger. This places
+          the people under them in an even more dangerous situation. In recent years, several people seeking shelter
+          beneath overpasses have been killed or severely injured. Being above ground level during a tornado is
+          dangerous.
+        </p>
+        <p>
+          <span class="red">Myth:</span> The low pressure with a tornado causes buildings to explode. Opening the
+          windows will equalize
+          the pressure, saving the building.
+          <br>
+          <br>
+          <span class="green">Fact:</span> Opening the windows in an attempt to equalize pressure will have no effect.
+          It is the violent winds
+          and debris that cause most structural damage. It is more important for you to move to a safe area away from
+          windows and exterior walls. With a tornado, every second counts, so use your time wisely and take cover.
+        </p>
+        
+        <p>
+          <span class="red">Myth:</span> It’s not raining here, and skies above me are clear, therefore I am safe from
+          lightning.
+          <br>
+          <br>
+          <span class="green">Fact:</span> Lightning can strike many miles away from the thunderstorm. If storms are in
+          your area, but skies
+          happen to be clear above you, that certainly does not imply you are safe from lightning. Though these “Bolts
+          from the Blue” are infrequent, lightning strikes 10 to 15 miles away from the storm are not out of the
+          question.
+        </p>
+        <p>
+          <span class="red">Myth:</span> Since I am inside my house and out of the storm, I am completely safe from
+          lightning.
+          <br>
+          <br>
+          <span class="green">Fact:</span> Just because you have taken shelter inside, you are not automatically safe.
+          While inside waiting out
+          a storm, avoid using the telephone or electrical appliances and do not take showers or baths. Also stay away
+          from doors and windows. Telephone lines, cords, plumbing, even metal window and door frames are all
+          lightning conductors and pose a threat
+        </p>
+        <p>
+          <span class="red">Myth:</span> Large and heavy vehicles, such as SUVs and pickups, are safe to drive through
+          flood waters.
+          <br>
+          <br>
+          <span class="green">Fact:</span> It is a common belief that the larger the vehicle, the deeper the water it
+          can drive through. Many
+          people do not realize that two feet of water can float most vehicles, including SUVs and pickups. If the
+          water is moving rapidly, vehicles can be swept away.
+        </p>
+        
+        <a href="https://www.weather.gov/media/top/myths.pdf">
+          <p>Complements of The National Weather Service</p>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="vcard">
+      <div class="org">Sunshine Forecast</div>
+      <div class="adr">
+        <a href="https://goo.gl/maps/pkMykZqhob49MrN48">
+          <div class="street-address">450 E 800 S.</div>
+          <span class="locality">Preston</span>,
+          <span class="region">ID</span>,
+          <span class="postal-code">83263</span>
+        </a>
+      </div>
+      <br>
+      <div class="tel">(208) 867-5309</div>
+      <br>
+      <div class="email"><a href="mailto:sunshineforecast@gmail.com">sunshineforecast@gmail.com</a></div>
+
+    </div>
+    <div class="cry-media">
+      <p> &copy; <span id="copyrightyear"></span> &#160; Sunshine Forecast | <span id="currentyear"></span></p>
+
+      <a href="#"><img src="images/full-site-images/facebook.png"
+             alt="Sunshine Forecast's Facebook page link."></a>
+      <a href="#"><img src="images/full-site-images/instagram.png"
+             alt="Sunshine Forecast's Instagram account link."></a>
+      <a href="#"><img src="images/full-site-images/twitter.png"
+             alt="Sunshine Forecast's Twitter site link."></a>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

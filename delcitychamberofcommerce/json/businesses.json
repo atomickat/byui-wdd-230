@@ -1,0 +1,88 @@
+  {
+    "businesses": [
+      {
+        "name": "Mid-Del Physical Therapy Clinic",
+        "address": "2825 Epperly Dr, Del City, OK 73115",
+        "phoneNumber": "(405) 670-5569",
+        "email": "middelphysicaltherapyclinic@gmail.com",
+        "website": "https://middelpt.com/" 
+      },
+      {
+        "name": "P J's Flowers & Gifts",
+        "address": "2900 Epperly Dr, Oklahoma City, OK 73115",
+        "phoneNumber": "(405) 672-1641",
+        "email": "pjsflowersandgifts@yahoo.com",
+        "website": "https://www.pjsflowerandgiftshop.com/" 
+      },
+      {
+        "name": "Paws 4 Purpose, K9 Training LLC",
+        "address": "2901 Epperly Dr, Del City, OK 73115",
+        "phoneNumber": "(405) 724-8949",
+        "email": "info@paws4purpose.net",
+        "website": "https://paws4purpose.net/" 
+      },
+      {
+        "name": "Weavers Guild of OKC",
+        "address": "2905 Epperly Drive, Del City, Oklahoma 73115",
+        "phoneNumber": "(405) 345-5465",
+        "email": "weaversguildokc@gmail.com",
+        "website": "https://www.weaversguildokc.com/" 
+      },
+      {
+        "name": "Nadlmok Acupuncture & Herbs",
+        "address": "2913 Epperly Dr, Del City, OK 73115",
+        "phoneNumber": "(405) 670-1006",
+        "email": "nadlmokacupunctureandherbs@email.com",
+        "website": "https://www.facebook.com/nadlmok/" 
+      },
+      {
+        "name": "Long Zhu Chinese Restaurant",
+        "address": "4416 SE 29th St, Oklahoma City, OK 73115",
+        "phoneNumber": "(405) 601-8878",
+        "email": "longzhuchinese.com",
+        "website": "https://www.longzhuchinese.com/?utm_source=gmb&utm_medium=website" 
+      },
+      {
+        "name": "Ladies & Gentlemens Hair Studio",
+        "address": "4412 Southeast 29th Street #500, Del City, OK 73115",
+        "phoneNumber": "(405) 670-5336",
+        "email": "landghairstudio@email.com",
+        "website": "https://ladies-gentlemens-hair-studio.business.site/" 
+      },
+      {
+        "name": "Lady Nail",
+        "address": "4330 SE 29th St #3001, Oklahoma City, OK 73115",
+        "phoneNumber": "(405) 677-5770",
+        "email": "ladynail@excite.com",
+        "website": "https://www.facebook.com/pages/Lady-Nail/154427644594034" 
+      },
+      {
+        "name": "Shelly's Grooming",
+        "address": "4330 SE 29th St Del City, OK 73115",
+        "phoneNumber": "(405) 412-2883",
+        "email": "shellysgrooming@email.com",
+        "website": "https://www.facebook.com/Shellys-Grooming-1654341798135202/" 
+      },
+      {
+        "name": "Salon 87",
+        "address": "4330 SE 29th St Suite 3005, Del City, OK 73115",
+        "phoneNumber": "(405) 318-7987",
+        "email": "salon87@hotmail.com",
+        "website": "https://www.salon87okc.com/" 
+      },
+      {
+        "name": "One Stop Insurance Agency Inc",
+        "address": "4330 SE 29th St, Del City, OK 73115",
+        "phoneNumber": "(405) 670-1481",
+        "email": "onestopinsuranceagency@yahoo.com",
+        "website": "https://www.okcinsurancegroup.com/" 
+      },
+      {
+        "name": "Shiral's Ultimate Looks",
+        "address": "1713 S Sunnylane Rd, Del City, OK 73115",
+        "phoneNumber": "(405) 677-8460",
+        "email": "shiralsultimatelooks@email.com",
+        "website": "https://www.facebook.com/pages/Shirals-Ultimate-Looks/116385475089646" 
+      }
+    ]
+  }

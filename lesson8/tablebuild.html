@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Table Build</title>
+  <meta name="description"
+        content="This page is for learning how to build and style tables.">
+  <link rel="stylesheet"
+        href="css/normalize.css">
+  <link rel="stylesheet"
+        href="css/table.css">
+
+</head>
+
+<body>
+  <table>
+
+    <thead>
+      <tr>
+        <th id="amceWildwest"
+            colspan="3">AMCE Wildwest</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="col"
+            id="period">Period</th>
+        <th scope="col"
+            id="sales">Sales</th>
+        <th scope="col"
+            id="salesGoal">Sales Goal</th>
+      </tr>
+      <tr>
+        <th scope="row"
+            id="august">August</th>
+        <td headers="august sales">$3,590</td>
+        <td headers="august sales_goal">$4,000</td>
+      </tr>
+      <tr>
+        <th scope="row"
+            id="september">September</th>
+        <td headers="september sales">$4,420</td>
+        <td headers="september sales_goal">$5,000</td>
+      </tr>
+      <tr>
+        <th scope="row"
+            id="october">October</th>
+        <td headers="october sales">$4,870</td>
+        <td headers="october sales_goal">$5,000</td>
+      </tr>
+      <tr>
+        <th scope="row"
+            id="november">November</th>
+        <td headers="november sales">$8,610</td>
+        <td headers="november sales_goal">$7,500</td>
+      </tr>
+      <tr>
+        <th scope="row"
+            id="blackFriday">Black Friday</th>
+        <td header="black_friday sales sales_goal" colspan="2">$3,200</td>
+      </tr>
+      <tr>
+        <th scope="row"
+            id="december">December</th>
+        <td headers="december sales">$6,820</td>
+        <td headers="december sales_goal">$7,500</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+      </tr>
+    </tfoot>
+
+  </table>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Ubuntu']
+      }
+    });
+  </script>
+
+</body>
+
+</html>

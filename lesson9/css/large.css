@@ -1,0 +1,9 @@
+@media only screen and (min-width: 60em) {
+
+  article picture.art-pic img {
+    width: 35%;
+    margin-bottom: 10px;
+  }
+
+
+}
